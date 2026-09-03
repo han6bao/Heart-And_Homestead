@@ -1,0 +1,18 @@
+# Heart & Homestead Photography — Design Brief (Phase 0)
+
+- Site: heart-and-homestead.higgsfield.app · type: website (standalone brand, no Higgsfield integration)
+- Client: Heart & Homestead Photography, Southern Indiana — portrait + lifestyle + storytelling photographer (Emily). Not advertised publicly as a wedding photographer.
+- Design read: editorial heritage family-album site for warm, family-centered clients in Southern Indiana — storybook, timeless, premium and calm; never farmhouse cliché, never a generic template.
+- Concept spine: "a family photo album kept carefully in a drawer" — the site reads like a quiet golden-hour album: editorial grids, botanical dividers, heirloom serif type, generous white space, deep emerald anchors.
+- Delivery tier: editorial (calm, micro-motion only) — mandated by the client brief.
+- Animation mode: non-animated — user's explicit brief ("Add subtle interactions only… Do not use excessive animation") and the explicit instruction "dont generate new pics only placeholders" rule out the generated film-scrub journey.
+- Locked palette (client-specified; overrides default bans — these are her brand colors): Deep Emerald #1D3B2E, Forest #2F4F3D, Muted Sage #A4B49A, Warm Ivory #F7F3EA, Parchment #E8DDC6, Warm Taupe #C7B8A3, Charcoal #2B2B2B.
+- Locked type (client-specified): Playfair Display (display), Cormorant Garamond italic (accent), Lora (body), Inter uppercase with generous letter-spacing for small labels/nav.
+- Logo: supplied Heart & Homestead mark (anatomical heart + vintage camera + wildflowers) used unaltered in four placements: full primary (header), banner (hero/footer), emblem (favicon), compact (mobile header).
+- Imagery: ONLY the client's real photography and logo set (8 supplied assets). NO generated photography (explicit client + user constraint). Labeled text placeholders for missing imagery (Emily portrait, seniors, branding, events, venues not yet photographed).
+- Section plan (home): 1 full-bleed photo hero (emerald scrim, logo mark, headline, 2 CTAs) · 2 tagline manifesto band (emerald) · 3 intro split (image left / story right) · 4 services editorial hand-list with photo accents · 5 experiences duo (emerald feature split: Always Ranch LLC + Fairytale Gardens) · 6 full-bleed golden-hour quote band · 7 CTA panel (parchment) · 8 footer (emerald). 8 sections, 6+ layout families, no consecutive repeats.
+- Asset plan: provided logo-primary / logo-banner / logo-emblem + 5 real photos copied into app/public/assets and committed. No generation pipeline.
+- CTA inventory (each intent gets its own treatment): Tell Me Your Story (primary inquiry), Explore Sessions (secondary hairline), Meet Emily (text link to About), Send My Story (form submit), Client Area (outline pill in header).
+- Pages: Home, About, Portfolio (categorized editorial gallery + lightbox), Sessions (+ booking process, tailored note), Experiences, Locations ("Places With a Story", data-driven venues), Client Area hub (Pixieset + external integration placeholders), Inquire (adaptive form), FAQ. Nav per brief; footer emerald with cream logo + tagline.
+- Conversion goal: inquiry form stored to D1 (real persistence); Pixieset galleries integrated visually with editable placeholder links in one site-data file.
+- Accessibility: WCAG AA contrast, keyboard navigation, skip link, alt text on all imagery, labeled form fields, visible focus states, prefers-reduced-motion respected, excellent mobile.

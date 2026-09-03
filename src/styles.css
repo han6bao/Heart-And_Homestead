@@ -1,0 +1,446 @@
+/* ============================================================
+   Heart & Homestead Photography — custom brand theme
+   Palette + type locked from the client brief (design-brief.md).
+   Editorial tier: micro-motion only, prefers-reduced-motion safe.
+   ============================================================ */
+@import "tailwindcss" source(none);
+@source "../src";
+
+@theme {
+  /* Super high-end greens over warm beige: deep emerald anchors,
+     warm ivory light sections (beige kept for warmth). */
+  --color-emerald-deep: #1d3b2e;
+  --color-forest: #2f4f3d;
+  --color-sage: #a4b49a;
+  --color-ivory: #e9e4da;
+  --color-parchment: #ddd4c4;
+  --color-taupe: #a89a83;
+  --color-gold: #c9a227;
+  --color-charcoal: #2b2b2b;
+
+  --font-display: "Playfair Display", Georgia, "Times New Roman", serif;
+  --font-accent: "Cormorant Garamond", Georgia, serif;
+  --font-serif: "Lora", Georgia, serif;
+  --font-sans: "Inter", "Helvetica Neue", Arial, sans-serif;
+
+  --spacing: 0.25rem;
+}
+
+:root {
+  --focus-ring: #1d3b2e;
+  color-scheme: light;
+}
+
+@layer base {
+  html {
+    background-color: var(--color-ivory);
+    color: var(--color-charcoal);
+    -webkit-text-size-adjust: 100%;
+  }
+  @media (prefers-reduced-motion: no-preference) {
+    html {
+      scroll-behavior: smooth;
+    }
+  }
+  body {
+    background-color: var(--color-ivory);
+    color: var(--color-charcoal);
+    font-family: var(--font-serif);
+    font-size: 1.0625rem;
+    line-height: 1.75;
+    overflow-x: clip;
+    max-width: 100%;
+  }
+  /* Mobile cutoff hardening: text always wraps, grid items never blow out */
+  .grid > *,
+  .columns-1 > * {
+    min-width: 0;
+  }
+  p,
+  li,
+  h1,
+  h2,
+  h3,
+  h4,
+  figcaption,
+  blockquote {
+    overflow-wrap: break-word;
+  }
+  em,
+  .font-accent {
+    overflow-wrap: break-word;
+  }
+  @media (max-width: 639px) {
+    h1, h2, h3, h4 {
+      letter-spacing: 0.035em;
+    }
+    .font-accent {
+      padding-right: 0.06em;
+    }
+  }
+  h1, h2, h3, h4 {
+    font-family: var(--font-display);
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--color-emerald-deep);
+  }
+  h1 em, h2 em, h3 em, h4 em {
+    font-style: normal;
+    letter-spacing: inherit;
+  }
+  ::selection {
+    background-color: var(--color-parchment);
+    color: var(--color-emerald-deep);
+  }
+  :focus-visible {
+    outline: 2px solid var(--focus-ring, var(--color-emerald-deep));
+    outline-offset: 3px;
+  }
+  .is-dark {
+    --focus-ring: #f7f3ea;
+  }
+  details summary::-webkit-details-marker {
+    display: none;
+  }
+  details summary {
+    list-style: none;
+  }
+}
+
+@layer components {
+  /* --- editorial CTA garments (one per intent) --- */
+  /* Ghost text button - the client's own site uses text with thin
+     top/bottom rules (her "BOOK TODAY" style). */
+  .cta-story {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.625rem;
+    background-color: transparent;
+    color: var(--color-emerald-deep);
+    font-family: var(--font-sans);
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    padding: 0.7rem 1.5rem;
+    border-top: 1px solid var(--color-emerald-deep);
+    border-bottom: 1px solid var(--color-emerald-deep);
+    transition: background-color 0.25s ease, border-color 0.25s ease;
+  }
+  .cta-story:hover {
+    background-color: rgba(29, 59, 46, 0.06);
+  }
+  .cta-story:active {
+    transform: translateY(1px);
+  }
+  .cta-story.is-dark {
+    color: var(--color-ivory);
+    border-color: var(--color-ivory);
+  }
+  .cta-story.is-dark:hover {
+    background-color: rgba(233, 228, 218, 0.09);
+  }
+  .cta-story:active {
+    transform: translateY(1px);
+  }
+  .cta-story.is-dark {
+    background-color: var(--color-ivory);
+    border-color: var(--color-ivory);
+    color: var(--color-emerald-deep);
+  }
+  .cta-story.is-dark:hover {
+    background-color: var(--color-parchment);
+    border-color: var(--color-parchment);
+  }
+
+  .cta-sessions {
+    display: inline-flex;
+    align-items: baseline;
+    gap: 0.5rem;
+    color: var(--color-forest);
+    font-family: var(--font-sans);
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    padding-bottom: 0.3rem;
+    border-bottom: 1px solid var(--color-taupe);
+    transition: border-color 0.25s ease, color 0.25s ease;
+  }
+  .cta-sessions:hover {
+    color: var(--color-emerald-deep);
+    border-color: var(--color-emerald-deep);
+  }
+  .cta-sessions .arrow {
+    transition: transform 0.25s ease;
+  }
+  .cta-sessions:hover .arrow {
+    transform: translateX(4px);
+  }
+
+  .cta-meet {
+    color: var(--color-emerald-deep);
+    font-family: var(--font-accent);
+    font-size: 1.2rem;
+    font-style: italic;
+    border-bottom: 1px solid var(--color-taupe);
+    padding-bottom: 0.2rem;
+    transition: border-color 0.25s ease;
+  }
+  .cta-meet:hover {
+    border-color: var(--color-emerald-deep);
+  }
+
+  .cta-submit {
+    width: 100%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.625rem;
+    background-color: var(--color-emerald-deep);
+    color: var(--color-ivory);
+    font-family: var(--font-sans);
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    padding: 1.05rem 2rem;
+    border: 1px solid var(--color-emerald-deep);
+    transition: background-color 0.25s ease, border-color 0.25s ease;
+    cursor: pointer;
+  }
+  .cta-submit:hover {
+    background-color: #274d3d;
+    border-color: #274d3d;
+  }
+  .cta-submit:disabled {
+    opacity: 0.55;
+    cursor: wait;
+  }
+
+  .client-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    color: var(--color-ivory);
+    font-family: var(--font-sans);
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    padding: 0.55rem 1rem;
+    border: 1px solid rgba(247, 243, 234, 0.45);
+    transition: border-color 0.25s ease, background-color 0.25s ease;
+  }
+  .client-pill:hover {
+    border-color: var(--color-ivory);
+    background-color: rgba(247, 243, 234, 0.08);
+  }
+
+  /* --- form fields --- */
+  .field-label {
+    display: block;
+    font-family: var(--font-sans);
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--color-forest);
+    margin-bottom: 0.4rem;
+  }
+  .field-input {
+    width: 100%;
+    background-color: var(--color-ivory);
+    border: 1px solid var(--color-taupe);
+    color: var(--color-charcoal);
+    font-family: var(--font-serif);
+    font-size: 1rem;
+    padding: 0.7rem 0.9rem;
+    transition: border-color 0.2s ease;
+  }
+  .field-input::placeholder {
+    color: #8a7f6e;
+  }
+  .field-input:focus {
+    outline: none;
+    border-color: var(--color-emerald-deep);
+    box-shadow: 0 0 0 1px var(--color-emerald-deep);
+  }
+  textarea.field-input {
+    resize: vertical;
+    min-height: 7rem;
+  }
+  select.field-input {
+    appearance: none;
+    background-image: linear-gradient(45deg, transparent 50%, var(--color-emerald-deep) 50%),
+      linear-gradient(135deg, var(--color-emerald-deep) 50%, transparent 50%);
+    background-position: calc(100% - 1.1rem) 55%, calc(100% - 0.8rem) 55%;
+    background-size: 0.3rem 0.3rem;
+    background-repeat: no-repeat;
+  }
+
+  /* FAQ accordion toggle */
+  .faq-arrow {
+    transition: transform 0.25s ease;
+  }
+  details[open] .faq-arrow {
+    transform: rotate(45deg);
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .faq-arrow {
+      transition: none;
+    }
+  }
+
+  /* --- photography --- */
+  .photo-frame {
+    position: relative;
+    overflow: hidden;
+    background-color: var(--color-parchment);
+  }
+  .photo-frame img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.9s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+  @media (prefers-reduced-motion: no-preference) {
+    .photo-frame a:hover img,
+    .photo-frame button:hover img {
+      transform: scale(1.035);
+    }
+  }
+  .photo-frame.zoom-less img:hover {
+    transform: none;
+  }
+
+  /* labeled placeholder until real photography arrives (user mandate) */
+  .placeholder-tile {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.85rem;
+    width: 100%;
+    height: 100%;
+    min-height: 12rem;
+    background-color: var(--color-parchment);
+    background-image: radial-gradient(
+        ellipse at 30% 20%,
+        rgba(247, 243, 234, 0.9),
+        transparent 55%
+      ),
+      radial-gradient(ellipse at 75% 80%, rgba(196, 184, 163, 0.35), transparent 60%);
+    border: 1px solid rgba(163, 146, 122, 0.55);
+    color: var(--color-forest);
+    text-align: center;
+    padding: 1.5rem 1rem;
+  }
+  .placeholder-tile .ph-icon {
+    color: var(--color-sage);
+  }
+  .placeholder-tile .ph-note {
+    font-family: var(--font-sans);
+    font-size: 0.68rem;
+    font-weight: 600;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--color-forest);
+    opacity: 0.75;
+  }
+
+  /* --- botanical accents --- */
+  .botanical-line {
+    display: block;
+    stroke: var(--color-sage);
+  }
+  .is-dark .botanical-line {
+    stroke: rgba(247, 243, 234, 0.55);
+  }
+  .botanical-line.flower {
+    stroke: none;
+    fill: var(--color-sage);
+  }
+  .is-dark .botanical-line.flower {
+    fill: rgba(247, 243, 234, 0.6);
+  }
+  @media (prefers-reduced-motion: no-preference) {
+    .botanical-draw path {
+      stroke-dasharray: 260;
+      stroke-dashoffset: 260;
+      animation: botanical-draw 1.8s ease-out forwards;
+    }
+  }
+  @keyframes botanical-draw {
+    to {
+      stroke-dashoffset: 0;
+    }
+  }
+
+  /* --- hero entrance: fires ON MOUNT (never viewport-gated) --- */
+  .hero-rise {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+  @media (prefers-reduced-motion: no-preference) {
+    .hero-rise {
+      animation: hero-rise 0.9s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+      animation-delay: var(--rise-delay, 0s);
+    }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .hero-rise {
+      opacity: 1;
+      transform: none;
+    }
+  }
+  @keyframes hero-rise {
+    to {
+      opacity: 1;
+      transform: none;
+    }
+  }
+
+  /* --- hairlines --- */
+  .hairline {
+    border: 0;
+    border-top: 1px solid var(--color-taupe);
+    opacity: 0.5;
+  }
+  .is-dark .hairline {
+    border-color: rgba(247, 243, 234, 0.28);
+  }
+  .hairline-emerald {
+    border-top: 1px solid var(--color-emerald-deep);
+    opacity: 0.25;
+  }
+}
+
+/* interior page hero (not the home photo hero) */
+.page-hero {
+  background-color: var(--color-emerald-deep);
+  background-image: radial-gradient(
+    ellipse at 85% 15%,
+    rgba(233, 228, 218, 0.1),
+    transparent 55%
+  );
+}
+/* Scroll pop-in: transform-only (never opacity), reduced-motion safe */
+[data-reveal] {
+  transform: translateY(28px) scale(0.99);
+  transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+  transition-delay: var(--rd, 0ms);
+}
+[data-reveal][data-revealed="true"] {
+  transform: none;
+}
+@media (prefers-reduced-motion: reduce) {
+  [data-reveal] {
+    transform: none;
+    transition: none;
+  }
+}

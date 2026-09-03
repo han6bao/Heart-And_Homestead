@@ -1,0 +1,54 @@
+/* Botanical divider — client brief calls for subtle botanical accents and
+   thin elegant dividers. A quiet sprig with leaves and two blossom dots. */
+export function BotanicalDivider({ className = "" }: { className?: string }) {
+  return (
+    <div
+      className={`flex items-center justify-center gap-4 ${className}`}
+      aria-hidden="true"
+    >
+      <span className="hairline w-16 sm:w-24" />
+      <svg
+        width="120"
+        height="26"
+        viewBox="0 0 120 26"
+        fill="none"
+        className="botanical-draw"
+      >
+        <path
+          className="botanical-line"
+          d="M60 22 C58 14, 62 10, 60 3"
+          strokeWidth="1.1"
+          strokeLinecap="round"
+        />
+        <path
+          className="botanical-line"
+          d="M60 15 C48 13, 42 15, 37 11"
+          strokeWidth="1"
+          strokeLinecap="round"
+        />
+        <path
+          className="botanical-line"
+          d="M60 15 C72 13, 78 15, 83 11"
+          strokeWidth="1"
+          strokeLinecap="round"
+        />
+        <path
+          className="botanical-line"
+          d="M60 9 C50 7, 45 8, 41 5"
+          strokeWidth="1"
+          strokeLinecap="round"
+        />
+        <path
+          className="botanical-line"
+          d="M60 9 C70 7, 75 8, 79 5"
+          strokeWidth="1"
+          strokeLinecap="round"
+        />
+        <circle className="botanical-line flower" cx="34" cy="11" r="2.1" />
+        <circle className="botanical-line flower" cx="86" cy="11" r="2.1" />
+        <circle className="botanical-line flower" cx="60" cy="2.6" r="1.7" />
+      </svg>
+      <span className="hairline w-16 sm:w-24" />
+    </div>
+  );
+}
