@@ -250,7 +250,7 @@ function Home() {
       </section>
 
       {/* 4 — Experiences duo */}
-      <section className="is-dark bg-emerald-deep pt-20 pb-32 sm:pt-28 sm:pb-44">
+      <section className="is-dark bg-emerald-deep pt-20 pb-16 sm:pt-28 sm:pb-24">
         <div className="mx-auto max-w-7xl px-5 sm:px-8">
           <BotanicalDivider />
           <div
@@ -304,13 +304,13 @@ function Home() {
       <section className="bg-parchment/45">
         <div
           data-reveal
-          className="mx-auto max-w-4xl px-5 py-24 text-center sm:px-8 sm:py-32"
+          className="mx-auto max-w-4xl px-5 py-14 text-center sm:px-8 sm:py-20"
         >
           <BotanicalDivider />
-          <p className="mt-10 font-accent text-3xl italic leading-snug text-charcoal sm:text-4xl lg:text-[2.9rem]">
+          <p className="mt-6 font-accent text-3xl italic leading-snug text-charcoal sm:text-4xl lg:text-[2.9rem]">
             Storytelling, warm, and never overly posed.
           </p>
-          <p className="mt-6 text-[0.72rem] font-semibold uppercase tracking-[0.24em] text-forest">
+          <p className="mt-4 text-[0.72rem] font-semibold uppercase tracking-[0.24em] text-forest">
             Personally tailored for every client
           </p>
         </div>
