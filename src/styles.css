@@ -316,6 +316,15 @@
   .photo-frame.zoom-less img:hover {
     transform: none;
   }
+  /* natural frames keep every photo's true shape — never cropped */
+  .photo-frame.natural img {
+    height: auto;
+    object-fit: contain;
+  }
+  .photo-frame.natural {
+    overflow: visible;
+    background-color: transparent;
+  }
 
   /* labeled placeholder until real photography arrives (user mandate) */
   .placeholder-tile {

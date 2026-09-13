@@ -275,7 +275,7 @@ function Home() {
                 style={{ "--rd": `${idx * 110}ms` } as CSSProperties}
               >
                 {exp.photo ? (
-                  <div className="photo-frame aspect-[4/3]">
+                  <div className="photo-frame natural">
                     <img
                       src={exp.photo}
                       alt={`${exp.name} - golden light in open country`}

@@ -104,7 +104,7 @@ function Sessions() {
                     </p>
                   </div>
                   {session.image ? (
-                    <div className="photo-frame mt-7 aspect-[4/3]">
+                    <div className="photo-frame natural mt-7">
                       <img src={session.image} alt={session.name} loading="lazy" />
                     </div>
                   ) : (

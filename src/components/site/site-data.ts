@@ -64,7 +64,7 @@ export const SESSION_TYPES: SessionType[] = [
       "A private gallery of finished images on Pixieset",
       "Photographs you will treasure for generations",
     ],
-    placeholder: true,
+    image: "/assets/gallery/families-01.jpg",
   },
   {
     id: "seniors",
@@ -118,7 +118,7 @@ export const SESSION_TYPES: SessionType[] = [
       "A private gallery of finished images on Pixieset",
       "Photographs of this season of your love",
     ],
-    placeholder: true,
+    image: "/assets/gallery/couples-01.jpg",
   },
   {
     id: "branding",
@@ -136,7 +136,7 @@ export const SESSION_TYPES: SessionType[] = [
       "Social media and website-ready visuals",
       "Imagery that makes your brand feel like you",
     ],
-    placeholder: true,
+    image: "/assets/gallery/branding-01.jpg",
   },
   {
     id: "events",
@@ -172,7 +172,7 @@ export const SESSION_TYPES: SessionType[] = [
       "A private gallery of finished images on Pixieset",
       "Portraits that are truly yours",
     ],
-    placeholder: true,
+    image: "/assets/gallery/creative-01.jpg",
   },
 ];
 
@@ -194,7 +194,7 @@ export const EXPERIENCES = [
       "Sunsets",
       "Golden hour",
     ],
-    photo: "/assets/photo-dad-toddler-horse.jpg",
+    photo: "/assets/gallery/ranch-01.jpg",
   },
   {
     id: "fairytale-gardens",
@@ -203,7 +203,7 @@ export const EXPERIENCES = [
     description:
       "Whimsical, storybook-inspired gardens where childhood imagination becomes photographs filled with wonder, play, and storytelling. Think Peter Pan, Little Red Riding Hood, and Hansel & Gretel worlds brought to golden-hour life.",
     features: ["Peter Pan", "Little Red Riding Hood", "Hansel & Gretel", "Storybook settings"],
-    photo: null as string | null,
+    photo: "/assets/gallery/creative-01.jpg",
   },
 ];
 
@@ -223,7 +223,7 @@ export const VENUES: Venue[] = [
   {
     name: "Always Ranch LLC",
     region: "Southern Indiana · open country",
-    photos: ["/assets/photo-family-horses.jpg"],
+    photos: ["/assets/gallery/ranch-01.jpg", "/assets/gallery/ranch-02.jpg", "/assets/gallery/ranch-03.jpg"],
     why: "A warm, open-country setting filled with animals, golden light, and space to simply be together. It lets families and children interact with the land instead of standing still for photos.",
     bestSessions: [
       "Families + Children",
@@ -240,7 +240,7 @@ export const VENUES: Venue[] = [
   {
     name: "Fairytale Gardens",
     region: "Southern Indiana · a storybook garden",
-    photos: [],
+    photos: ["/assets/gallery/creative-01.jpg"],
     why: "Whimsical, storybook-themed gardens that turn childhood imagination into photographs filled with wonder, play, and storytelling.",
     bestSessions: ["Children", "Families", "Creative Portraits"],
     bestTime: "Soft morning light or golden hour",
@@ -325,13 +325,13 @@ export const OPTION_BY_SESSION: Record<string, string> = {
 };
 
 export const PORTFOLIO_CATEGORIES: PortfolioCategory[] = [
-  { id: "families", label: "Families", images: ["/assets/photo-family-sunset.jpg", "/assets/photo-family-horses.jpg"], placeholder: false },
-  { id: "children", label: "Children", images: ["/assets/photo-grandpa-grandgirl.jpg"], placeholder: false },
+  { id: "families", label: "Families", images: ["/assets/gallery/families-01.jpg", "/assets/gallery/families-02.jpg", "/assets/gallery/families-03.jpg", "/assets/gallery/families-04.jpg", "/assets/gallery/families-05.jpg", "/assets/gallery/families-06.jpg", "/assets/gallery/families-07.jpg", "/assets/gallery/families-08.jpg", "/assets/gallery/families-09.jpg", "/assets/gallery/families-10.jpg", "/assets/gallery/families-11.jpg", "/assets/gallery/families-12.jpg", "/assets/gallery/families-13.jpg", "/assets/gallery/families-14.jpg", "/assets/gallery/families-15.jpg", "/assets/gallery/families-16.jpg", "/assets/gallery/families-17.jpg", "/assets/gallery/families-18.jpg", "/assets/gallery/families-19.jpg", "/assets/gallery/families-20.jpg", "/assets/gallery/families-21.jpg", "/assets/gallery/families-22.jpg", "/assets/gallery/families-23.jpg", "/assets/gallery/families-24.jpg", "/assets/gallery/families-25.jpg", "/assets/gallery/families-26.jpg", "/assets/gallery/families-27.jpg", "/assets/gallery/families-28.jpg", "/assets/gallery/families-29.jpg", "/assets/gallery/families-30.jpg", "/assets/gallery/families-31.jpg", "/assets/gallery/families-32.jpg", "/assets/gallery/families-33.jpg", "/assets/gallery/families-34.jpg", "/assets/gallery/families-35.jpg", "/assets/gallery/families-36.jpg", "/assets/gallery/families-37.jpg", "/assets/gallery/families-38.jpg", "/assets/gallery/families-39.jpg", "/assets/gallery/families-40.jpg", "/assets/gallery/families-41.jpg", "/assets/gallery/families-42.jpg", "/assets/gallery/families-43.jpg", "/assets/gallery/families-44.jpg", "/assets/gallery/families-45.jpg", "/assets/gallery/families-46.jpg", "/assets/gallery/families-47.jpg", "/assets/gallery/families-48.jpg", "/assets/gallery/families-49.jpg", "/assets/gallery/families-50.jpg", "/assets/gallery/families-51.jpg", "/assets/gallery/families-52.jpg"], placeholder: false },
+  { id: "children", label: "Children", images: ["/assets/gallery/children-01.jpg", "/assets/gallery/children-02.jpg", "/assets/gallery/children-03.jpg", "/assets/gallery/children-04.jpg", "/assets/gallery/children-05.jpg", "/assets/gallery/children-06.jpg", "/assets/gallery/children-07.jpg", "/assets/gallery/children-08.jpg", "/assets/gallery/children-09.jpg", "/assets/gallery/children-10.jpg", "/assets/gallery/children-11.jpg", "/assets/gallery/children-12.jpg", "/assets/gallery/children-13.jpg", "/assets/gallery/children-14.jpg", "/assets/gallery/children-15.jpg", "/assets/gallery/children-16.jpg", "/assets/gallery/children-17.jpg", "/assets/gallery/children-18.jpg", "/assets/gallery/children-19.jpg", "/assets/gallery/children-20.jpg", "/assets/gallery/children-21.jpg", "/assets/gallery/children-22.jpg", "/assets/gallery/children-23.jpg", "/assets/gallery/children-24.jpg", "/assets/gallery/children-25.jpg", "/assets/gallery/children-26.jpg", "/assets/gallery/children-27.jpg", "/assets/gallery/children-28.jpg", "/assets/gallery/children-29.jpg", "/assets/gallery/children-30.jpg", "/assets/gallery/children-31.jpg", "/assets/gallery/children-32.jpg", "/assets/gallery/children-33.jpg", "/assets/gallery/children-34.jpg", "/assets/gallery/children-35.jpg", "/assets/gallery/children-36.jpg", "/assets/gallery/children-37.jpg", "/assets/gallery/children-38.jpg", "/assets/gallery/children-39.jpg", "/assets/gallery/children-40.jpg", "/assets/gallery/children-41.jpg"], placeholder: false },
   { id: "maternity", label: "Maternity", images: [], placeholder: true },
   { id: "seniors", label: "Seniors", images: [], placeholder: true },
-  { id: "couples", label: "Couples + Engagements", images: [], placeholder: true },
-  { id: "branding", label: "Branding", images: [], placeholder: true },
-  { id: "products", label: "Products", images: [], placeholder: true },
+  { id: "couples", label: "Couples + Engagements", images: ["/assets/gallery/couples-01.jpg", "/assets/gallery/couples-02.jpg", "/assets/gallery/couples-03.jpg", "/assets/gallery/couples-04.jpg", "/assets/gallery/couples-05.jpg", "/assets/gallery/couples-06.jpg", "/assets/gallery/couples-07.jpg", "/assets/gallery/couples-08.jpg", "/assets/gallery/couples-09.jpg", "/assets/gallery/couples-10.jpg", "/assets/gallery/couples-11.jpg", "/assets/gallery/couples-12.jpg", "/assets/gallery/couples-13.jpg", "/assets/gallery/couples-14.jpg", "/assets/gallery/couples-15.jpg", "/assets/gallery/couples-16.jpg", "/assets/gallery/couples-17.jpg", "/assets/gallery/couples-18.jpg", "/assets/gallery/couples-19.jpg", "/assets/gallery/couples-20.jpg", "/assets/gallery/couples-21.jpg", "/assets/gallery/couples-22.jpg", "/assets/gallery/couples-23.jpg", "/assets/gallery/couples-24.jpg", "/assets/gallery/couples-25.jpg", "/assets/gallery/couples-26.jpg", "/assets/gallery/couples-27.jpg", "/assets/gallery/couples-28.jpg", "/assets/gallery/couples-29.jpg", "/assets/gallery/couples-30.jpg", "/assets/gallery/couples-31.jpg", "/assets/gallery/couples-32.jpg", "/assets/gallery/couples-33.jpg", "/assets/gallery/couples-34.jpg", "/assets/gallery/couples-35.jpg", "/assets/gallery/couples-36.jpg", "/assets/gallery/couples-37.jpg", "/assets/gallery/couples-38.jpg"], placeholder: false },
+  { id: "branding", label: "Branding", images: ["/assets/gallery/branding-01.jpg", "/assets/gallery/branding-02.jpg", "/assets/gallery/branding-03.jpg"], placeholder: false },
+  { id: "products", label: "Products", images: ["/assets/gallery/products-01.jpg", "/assets/gallery/products-02.jpg", "/assets/gallery/products-03.jpg", "/assets/gallery/products-04.jpg", "/assets/gallery/products-05.jpg", "/assets/gallery/products-06.jpg", "/assets/gallery/products-07.jpg", "/assets/gallery/products-08.jpg", "/assets/gallery/products-09.jpg", "/assets/gallery/products-10.jpg", "/assets/gallery/products-11.jpg", "/assets/gallery/products-12.jpg", "/assets/gallery/products-13.jpg", "/assets/gallery/products-14.jpg", "/assets/gallery/products-15.jpg", "/assets/gallery/products-16.jpg", "/assets/gallery/products-17.jpg", "/assets/gallery/products-18.jpg", "/assets/gallery/products-19.jpg", "/assets/gallery/products-20.jpg", "/assets/gallery/products-21.jpg", "/assets/gallery/products-22.jpg"], placeholder: false },
   { id: "events", label: "Events", images: [], placeholder: true },
   { id: "experiences", label: "Experiences", images: [], placeholder: true },
 ];

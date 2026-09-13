@@ -37,16 +37,20 @@ function Experiences() {
           <div data-reveal className="grid items-center gap-12 lg:grid-cols-12 lg:gap-16">
             <div className="lg:col-span-6">
               <div className="grid grid-cols-2 gap-4">
-                <div className="photo-frame aspect-[3/4]">
+                <div className="photo-frame natural">
                   <img
-                    src={PHOTOS.dadToddler}
-                    alt="A father and toddler watch a horse from beside a fence at golden hour"
+                    src={EXPERIENCES[0].photo ?? ""}
+                    alt="Always Ranch - animals and golden light in open country"
                     loading="lazy"
                   />
                 </div>
                 <div className="mt-10 grid gap-4">
-                  <PhotoPlaceholder label="Ranch photographs" className="aspect-square" />
-                  <PhotoPlaceholder label="More ranch photographs" className="aspect-square" />
+                  <div className="photo-frame natural">
+                    <img src="/assets/gallery/ranch-02.jpg" alt="Always Ranch photographs" loading="lazy" />
+                  </div>
+                  <div className="photo-frame natural">
+                    <img src="/assets/gallery/ranch-03.jpg" alt="More Always Ranch photographs" loading="lazy" />
+                  </div>
                 </div>
               </div>
             </div>

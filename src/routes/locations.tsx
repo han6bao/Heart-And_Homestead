@@ -45,12 +45,12 @@ function Locations() {
               <div className="lg:col-span-5">
                 {venue.photos.length > 0 ? (
                   <div className="grid grid-cols-2 gap-4">
-                    <div className="photo-frame aspect-[3/4]">
+                    <div className="photo-frame natural">
                       <img src={venue.photos[0]} alt={venue.name} loading="lazy" />
                     </div>
                     <div className="mt-8 grid gap-4">
                       {venue.photos.slice(1).map((photo) => (
-                        <div key={photo} className="photo-frame aspect-square">
+                        <div key={photo} className="photo-frame natural">
                           <img src={photo} alt={`${venue.name} detail`} loading="lazy" />
                         </div>
                       ))}
