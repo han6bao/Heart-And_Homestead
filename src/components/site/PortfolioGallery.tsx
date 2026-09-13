@@ -3,9 +3,9 @@ import { useEffect, useRef, useState } from "react";
 import { X } from "@phosphor-icons/react";
 import { PORTFOLIO_CATEGORIES } from "./site-data";
 
-/* Sectioned masonry gallery. Every photograph keeps its natural shape —
-   nothing is cropped. Placeholder categories show a quiet note. */
-export function PortfolioGallery() {
+/* Masonry gallery. Every photograph keeps its natural shape — nothing is
+   cropped. With `categoryId` set it shows a single category; otherwise all. */
+export function PortfolioGallery({ categoryId }: { categoryId?: string }) {
   const [lightbox, setLightbox] = useState<{ src: string; label: string } | null>(null);
   const closeRef = useRef<HTMLButtonElement>(null);
 
@@ -23,16 +23,28 @@ export function PortfolioGallery() {
     };
   }, [lightbox]);
 
-  const filled = PORTFOLIO_CATEGORIES.filter((c) => c.images.length > 0);
+  const categories = categoryId
+    ? PORTFOLIO_CATEGORIES.filter((c) => c.id === categoryId)
+    : PORTFOLIO_CATEGORIES.filter((c) => c.images.length > 0);
   const comingSoon = PORTFOLIO_CATEGORIES.filter((c) => c.images.length === 0);
 
   return (
     <div>
-      {filled.map((category) => (
-        <section key={category.id} className="mb-20 last:mb-0">
-          <h2 className="text-2xl text-emerald-deep sm:text-3xl">{category.label}</h2>
-          <span className="mt-3 block h-px w-12 bg-emerald-deep/25" aria-hidden="true" />
-          <ul className="mt-8 columns-1 gap-6 sm:columns-2 lg:columns-3 lg:gap-8">
+      {categories.map((category) => (
+        <section key={category.id} className={categoryId ? "" : "mb-20 last:mb-0"}>
+          {!categoryId && (
+            <h2 className="text-2xl text-emerald-deep sm:text-3xl">{category.label}</h2>
+          )}
+          {!categoryId && (
+            <span className="mt-3 block h-px w-12 bg-emerald-deep/25" aria-hidden="true" />
+          )}
+          <ul
+            className={
+              categoryId
+                ? "columns-1 gap-6 sm:columns-2 lg:columns-3 lg:gap-8"
+                : "mt-8 columns-1 gap-6 sm:columns-2 lg:columns-3 lg:gap-8"
+            }
+          >
             {category.images.map((src, i) => (
               <li key={`${src}-${i}`} className="mb-6 break-inside-avoid lg:mb-8">
                 <button
