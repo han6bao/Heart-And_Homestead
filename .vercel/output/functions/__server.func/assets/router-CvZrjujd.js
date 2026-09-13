@@ -1845,7 +1845,7 @@ var Link = reactExports.forwardRef((props, ref) => {
   }
   return reactExports.createElement(_asChild, linkProps, children);
 });
-var Route$c = class Route extends BaseRoute {
+var Route$d = class Route extends BaseRoute {
   /**
   * @deprecated Use the `createRoute` function instead.
   */
@@ -1903,7 +1903,7 @@ var Route$c = class Route extends BaseRoute {
   }
 };
 function createRoute(options) {
-  return new Route$c(options);
+  return new Route$d(options);
 }
 function createRootRouteWithContext() {
   return (options) => {
@@ -3976,7 +3976,7 @@ var QueryClient = class {
     this.#mutationCache.clear();
   }
 };
-const appCss = "/assets/styles-CwtkcaAH.css";
+const appCss = "/assets/styles-D1eD8wwE.css";
 function reportHiggsfieldError(error, context = {}) {
   if (typeof window === "undefined") return;
   window.__higgsfieldEvents?.captureException?.(
@@ -4481,7 +4481,7 @@ const PORTFOLIO_CATEGORIES = [
   { id: "branding", label: "Branding", images: ["/assets/gallery/branding-01.jpg", "/assets/gallery/branding-02.jpg", "/assets/gallery/branding-03.jpg"], placeholder: false },
   { id: "products", label: "Products", images: ["/assets/gallery/products-01.jpg", "/assets/gallery/products-02.jpg", "/assets/gallery/products-03.jpg", "/assets/gallery/products-04.jpg", "/assets/gallery/products-05.jpg", "/assets/gallery/products-06.jpg", "/assets/gallery/products-07.jpg", "/assets/gallery/products-08.jpg", "/assets/gallery/products-09.jpg", "/assets/gallery/products-10.jpg", "/assets/gallery/products-11.jpg", "/assets/gallery/products-12.jpg", "/assets/gallery/products-13.jpg", "/assets/gallery/products-14.jpg", "/assets/gallery/products-15.jpg", "/assets/gallery/products-16.jpg", "/assets/gallery/products-17.jpg", "/assets/gallery/products-18.jpg", "/assets/gallery/products-19.jpg", "/assets/gallery/products-20.jpg", "/assets/gallery/products-21.jpg", "/assets/gallery/products-22.jpg"], placeholder: false },
   { id: "events", label: "Events", images: [], placeholder: true },
-  { id: "experiences", label: "Experiences", images: [], placeholder: true }
+  { id: "experiences", label: "Experiences", images: ["/assets/gallery/ranch-01.jpg", "/assets/gallery/ranch-02.jpg", "/assets/gallery/ranch-03.jpg", "/assets/gallery/ranch-04.jpg", "/assets/gallery/ranch-05.jpg", "/assets/gallery/ranch-06.jpg", "/assets/gallery/ranch-07.jpg", "/assets/gallery/ranch-08.jpg", "/assets/gallery/ranch-09.jpg"], placeholder: false }
 ];
 function Header() {
   const [open, setOpen] = reactExports.useState(false);
@@ -4836,7 +4836,7 @@ function ErrorPage({ error, reset }) {
     ] })
   ] }) });
 }
-const Route$b = createRootRouteWithContext()({
+const Route$c = createRootRouteWithContext()({
   head: () => buildHead(appMeta),
   shellComponent: RootShell,
   component: RootComponent,
@@ -4861,7 +4861,7 @@ function RootShell({ children }) {
   ] });
 }
 function RootComponent() {
-  const { queryClient } = Route$b.useRouteContext();
+  const { queryClient } = Route$c.useRouteContext();
   reactExports.useEffect(() => {
     {
       return;
@@ -4875,8 +4875,8 @@ function RootComponent() {
     /* @__PURE__ */ jsxRuntimeExports.jsx(MobileQuickBar, {})
   ] });
 }
-const $$splitComponentImporter$8 = () => import("./index-CUP9m-U2.js");
-const Route$a = createFileRoute()({
+const $$splitComponentImporter$9 = () => import("./index-DMw_qFyH.js");
+const Route$b = createFileRoute()({
   head: () => ({
     links: [{
       rel: "preload",
@@ -4884,10 +4884,10 @@ const Route$a = createFileRoute()({
       href: "/assets/photo-mama-baby-horse.jpg"
     }]
   }),
-  component: lazyRouteComponent($$splitComponentImporter$8, "component")
+  component: lazyRouteComponent($$splitComponentImporter$9, "component")
 });
-const $$splitComponentImporter$7 = () => import("./about-Ba_x0Vq4.js");
-const Route$9 = createFileRoute()({
+const $$splitComponentImporter$8 = () => import("./about-BaBwAEDQ.js");
+const Route$a = createFileRoute()({
   head: () => ({
     meta: [{
       title: "About Emily | Heart & Homestead Photography"
@@ -4896,10 +4896,10 @@ const Route$9 = createFileRoute()({
       content: "The heart behind Heart & Homestead. Meet Emily, a Southern Indiana portrait and lifestyle photographer."
     }]
   }),
-  component: lazyRouteComponent($$splitComponentImporter$7, "component")
+  component: lazyRouteComponent($$splitComponentImporter$8, "component")
 });
-const $$splitComponentImporter$6 = () => import("./client-area-DVDz2UZF.js");
-const Route$8 = createFileRoute()({
+const $$splitComponentImporter$7 = () => import("./client-area-CsvzXnO5.js");
+const Route$9 = createFileRoute()({
   head: () => ({
     meta: [{
       title: "Client Area | Heart & Homestead Photography"
@@ -4908,10 +4908,10 @@ const Route$8 = createFileRoute()({
       content: "Welcome back. View your gallery, book another session, sign contracts, complete payments, and find session resources."
     }]
   }),
-  component: lazyRouteComponent($$splitComponentImporter$6, "component")
+  component: lazyRouteComponent($$splitComponentImporter$7, "component")
 });
-const $$splitComponentImporter$5 = () => import("./experiences-68EZLPhe.js");
-const Route$7 = createFileRoute()({
+const $$splitComponentImporter$6 = () => import("./experiences-CIOgYnW3.js");
+const Route$8 = createFileRoute()({
   head: () => ({
     meta: [{
       title: "Experiences | Heart & Homestead Photography"
@@ -4920,10 +4920,10 @@ const Route$7 = createFileRoute()({
       content: "More than a session: the Always Ranch and storybook Fairytale Gardens offer settings as memorable as the photographs themselves."
     }]
   }),
-  component: lazyRouteComponent($$splitComponentImporter$5, "component")
+  component: lazyRouteComponent($$splitComponentImporter$6, "component")
 });
-const $$splitComponentImporter$4 = () => import("./faq-BYUc-ycr.js");
-const Route$6 = createFileRoute()({
+const $$splitComponentImporter$5 = () => import("./faq-DY4QPTMC.js");
+const Route$7 = createFileRoute()({
   head: () => ({
     meta: [{
       title: "FAQ | Heart & Homestead Photography"
@@ -4932,10 +4932,10 @@ const Route$6 = createFileRoute()({
       content: "Answers about travel, clothing, children, locations, galleries, events, pets, rain, editing, and payments for Heart & Homestead sessions."
     }]
   }),
-  component: lazyRouteComponent($$splitComponentImporter$4, "component")
+  component: lazyRouteComponent($$splitComponentImporter$5, "component")
 });
-const $$splitComponentImporter$3 = () => import("./inquire-DTGokUgq.js");
-const Route$5 = createFileRoute()({
+const $$splitComponentImporter$4 = () => import("./inquire-DPb2fnt9.js");
+const Route$6 = createFileRoute()({
   validateSearch: (search) => ({
     type: typeof search.type === "string" ? search.type : void 0
   }),
@@ -4947,10 +4947,10 @@ const Route$5 = createFileRoute()({
       content: "Tell Emily what you want to remember. Every session begins with a conversation about your family, your season, and the feeling you want to keep."
     }]
   }),
-  component: lazyRouteComponent($$splitComponentImporter$3, "component")
+  component: lazyRouteComponent($$splitComponentImporter$4, "component")
 });
-const $$splitComponentImporter$2 = () => import("./locations-DNa7U8Nw.js");
-const Route$4 = createFileRoute()({
+const $$splitComponentImporter$3 = () => import("./locations-DoXI1HJA.js");
+const Route$5 = createFileRoute()({
   head: () => ({
     meta: [{
       title: "Locations | Heart & Homestead Photography"
@@ -4959,21 +4959,9 @@ const Route$4 = createFileRoute()({
       content: "Places With a Story: favorite Southern Indiana locations, ranches, gardens, and venues for portrait and lifestyle sessions."
     }]
   }),
-  component: lazyRouteComponent($$splitComponentImporter$2, "component")
+  component: lazyRouteComponent($$splitComponentImporter$3, "component")
 });
-const $$splitComponentImporter$1 = () => import("./portfolio-CeDjPPL2.js");
-const Route$3 = createFileRoute()({
-  head: () => ({
-    meta: [{
-      title: "Portfolio | Heart & Homestead Photography"
-    }, {
-      name: "description",
-      content: "A glimpse of the stories Heart & Homestead Photography has been trusted to hold: families, children, and golden-hour moments."
-    }]
-  }),
-  component: lazyRouteComponent($$splitComponentImporter$1, "component")
-});
-const Route$2 = createFileRoute()({
+const Route$4 = createFileRoute()({
   server: {
     handlers: {
       GET: async ({ request }) => {
@@ -4994,8 +4982,8 @@ const Route$2 = createFileRoute()({
     }
   }
 });
-const $$splitComponentImporter = () => import("./sessions-DTW2ofyv.js");
-const Route$1 = createFileRoute()({
+const $$splitComponentImporter$2 = () => import("./sessions-B_zXRttM.js");
+const Route$3 = createFileRoute()({
   head: () => ({
     meta: [{
       title: "Sessions | Heart & Homestead Photography"
@@ -5004,9 +4992,9 @@ const Route$1 = createFileRoute()({
       content: "Relaxed, story-driven sessions for families, children, seniors, couples, branding, events, and creative portraits, personally tailored in Southern Indiana."
     }]
   }),
-  component: lazyRouteComponent($$splitComponentImporter, "component")
+  component: lazyRouteComponent($$splitComponentImporter$2, "component")
 });
-const Route2 = createFileRoute()({
+const Route$2 = createFileRoute()({
   server: {
     handlers: {
       GET: async ({ request }) => {
@@ -5033,60 +5021,86 @@ const Route2 = createFileRoute()({
     }
   }
 });
-const IndexRoute = Route$a.update({
+const $$splitComponentImporter$1 = () => import("./index-CcT5sqmB.js");
+const Route$1 = createFileRoute()({
+  head: () => ({
+    meta: [{
+      title: "Portfolio | Heart & Homestead Photography"
+    }, {
+      name: "description",
+      content: "Families, children, couples, branding, products, and experiences at Heart & Homestead Photography, Southern Indiana."
+    }]
+  }),
+  component: lazyRouteComponent($$splitComponentImporter$1, "component")
+});
+const $$splitComponentImporter = () => import("./_category-BurGPYaW.js");
+const Route2 = createFileRoute()({
+  head: () => ({
+    meta: [{
+      title: "Portfolio | Heart & Homestead Photography"
+    }]
+  }),
+  component: lazyRouteComponent($$splitComponentImporter, "component")
+});
+const IndexRoute = Route$b.update({
   id: "/",
   path: "/",
-  getParentRoute: () => Route$b
+  getParentRoute: () => Route$c
 });
-const AboutRoute = Route$9.update({
+const AboutRoute = Route$a.update({
   id: "/about",
   path: "/about",
-  getParentRoute: () => Route$b
+  getParentRoute: () => Route$c
 });
-const ClientAreaRoute = Route$8.update({
+const ClientAreaRoute = Route$9.update({
   id: "/client-area",
   path: "/client-area",
-  getParentRoute: () => Route$b
+  getParentRoute: () => Route$c
 });
-const ExperiencesRoute = Route$7.update({
+const ExperiencesRoute = Route$8.update({
   id: "/experiences",
   path: "/experiences",
-  getParentRoute: () => Route$b
+  getParentRoute: () => Route$c
 });
-const FaqRoute = Route$6.update({
+const FaqRoute = Route$7.update({
   id: "/faq",
   path: "/faq",
-  getParentRoute: () => Route$b
+  getParentRoute: () => Route$c
 });
-const InquireRoute = Route$5.update({
+const InquireRoute = Route$6.update({
   id: "/inquire",
   path: "/inquire",
-  getParentRoute: () => Route$b
+  getParentRoute: () => Route$c
 });
-const LocationsRoute = Route$4.update({
+const LocationsRoute = Route$5.update({
   id: "/locations",
   path: "/locations",
-  getParentRoute: () => Route$b
+  getParentRoute: () => Route$c
 });
-const PortfolioRoute = Route$3.update({
-  id: "/portfolio",
-  path: "/portfolio",
-  getParentRoute: () => Route$b
-});
-const RobotsDottxtRoute = Route$2.update({
+const RobotsDottxtRoute = Route$4.update({
   id: "/robots.txt",
   path: "/robots.txt",
-  getParentRoute: () => Route$b
+  getParentRoute: () => Route$c
 });
-const SessionsRoute = Route$1.update({
+const SessionsRoute = Route$3.update({
   id: "/sessions",
   path: "/sessions",
-  getParentRoute: () => Route$b
+  getParentRoute: () => Route$c
 });
-const SitemapDotxmlRoute = Route2.update({
+const SitemapDotxmlRoute = Route$2.update({
   id: "/sitemap.xml",
   path: "/sitemap.xml",
-  getParentRoute: () => Route$b
+  getParentRoute: () => Route$c
+});
+const PortfolioIndexRoute = Route$1.update({
+  id: "/portfolio/",
+  path: "/portfolio/",
+  getParentRoute: () => Route$c
+});
+const PortfolioCategoryRoute = Route2.update({
+  id: "/portfolio/$category",
+  path: "/portfolio/$category",
+  getParentRoute: () => Route$c
 });
 const rootRouteChildren = {
   IndexRoute,
@@ -5096,12 +5110,13 @@ const rootRouteChildren = {
   FaqRoute,
   InquireRoute,
   LocationsRoute,
-  PortfolioRoute,
   RobotsDottxtRoute,
   SessionsRoute,
-  SitemapDotxmlRoute
+  SitemapDotxmlRoute,
+  PortfolioCategoryRoute,
+  PortfolioIndexRoute
 };
-const routeTree = Route$b._addFileChildren(rootRouteChildren)._addFileTypes();
+const routeTree = Route$c._addFileChildren(rootRouteChildren)._addFileTypes();
 const getRouter = () => {
   const queryClient = new QueryClient();
   const router2 = createRouter({
@@ -5122,12 +5137,13 @@ export {
   Link as L,
   OPTION_BY_SESSION as O,
   PHOTOS as P,
-  Route$5 as R,
+  Route$6 as R,
   SESSION_TYPES as S,
   VENUES as V,
   LINKS as a,
   PORTFOLIO_CATEGORIES as b,
   c$2 as c,
+  Route2 as d,
   n,
   p,
   router as r
