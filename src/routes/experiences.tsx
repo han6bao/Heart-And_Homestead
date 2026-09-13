@@ -46,10 +46,10 @@ function Experiences() {
                 </div>
                 <div className="mt-10 grid gap-4">
                   <div className="photo-frame natural">
-                    <img src="/assets/gallery/ranch-02.jpg" alt="Always Ranch photographs" loading="lazy" />
+                    <img src="https://d2ol7oe51mr4n9.cloudfront.net/user_3DyScwqW9PJnlbQPOYfInCDp9WB/db0adb96-2418-4c6b-8f95-686bf64996cc.jpg" alt="Always Ranch photographs" loading="lazy" />
                   </div>
                   <div className="photo-frame natural">
-                    <img src="/assets/gallery/ranch-03.jpg" alt="More Always Ranch photographs" loading="lazy" />
+                    <img src="https://d2ol7oe51mr4n9.cloudfront.net/user_3DyScwqW9PJnlbQPOYfInCDp9WB/3669eb9c-6a26-4cdf-a8d8-8a66ee24bfee.jpg" alt="More Always Ranch photographs" loading="lazy" />
                   </div>
                 </div>
               </div>

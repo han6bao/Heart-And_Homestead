@@ -1,7 +1,7 @@
 import { T as jsxRuntimeExports } from "../server.js";
-import { E as EXPERIENCES, L as Link } from "./router-F-xe8oOE.js";
+import { E as EXPERIENCES, L as Link } from "./router-Bsm4Reah.js";
 import { B as BotanicalDivider } from "./BotanicalDivider-DoHIQw-_.js";
-import { P as PhotoPlaceholder } from "./PhotoPlaceholder-D1HdzqZp.js";
+import { P as PhotoPlaceholder } from "./PhotoPlaceholder-B_EkuuTR.js";
 import "node:async_hooks";
 import "node:stream";
 import "node:stream/web";
@@ -19,8 +19,8 @@ function Experiences() {
       /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "lg:col-span-6", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "grid grid-cols-2 gap-4", children: [
         /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "photo-frame natural", children: /* @__PURE__ */ jsxRuntimeExports.jsx("img", { src: EXPERIENCES[0].photo ?? "", alt: "Always Ranch - animals and golden light in open country", loading: "lazy" }) }),
         /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "mt-10 grid gap-4", children: [
-          /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "photo-frame natural", children: /* @__PURE__ */ jsxRuntimeExports.jsx("img", { src: "/assets/gallery/ranch-02.jpg", alt: "Always Ranch photographs", loading: "lazy" }) }),
-          /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "photo-frame natural", children: /* @__PURE__ */ jsxRuntimeExports.jsx("img", { src: "/assets/gallery/ranch-03.jpg", alt: "More Always Ranch photographs", loading: "lazy" }) })
+          /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "photo-frame natural", children: /* @__PURE__ */ jsxRuntimeExports.jsx("img", { src: "https://d2ol7oe51mr4n9.cloudfront.net/user_3DyScwqW9PJnlbQPOYfInCDp9WB/db0adb96-2418-4c6b-8f95-686bf64996cc.jpg", alt: "Always Ranch photographs", loading: "lazy" }) }),
+          /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "photo-frame natural", children: /* @__PURE__ */ jsxRuntimeExports.jsx("img", { src: "https://d2ol7oe51mr4n9.cloudfront.net/user_3DyScwqW9PJnlbQPOYfInCDp9WB/3669eb9c-6a26-4cdf-a8d8-8a66ee24bfee.jpg", alt: "More Always Ranch photographs", loading: "lazy" }) })
         ] })
       ] }) }),
       /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "lg:col-span-6", children: [
