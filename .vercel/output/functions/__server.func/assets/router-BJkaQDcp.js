@@ -3976,7 +3976,7 @@ var QueryClient = class {
     this.#mutationCache.clear();
   }
 };
-const appCss = "/assets/styles-CsC7X0hR.css";
+const appCss = "/assets/styles-LTXsSsSo.css";
 function reportHiggsfieldError(error, context = {}) {
   if (typeof window === "undefined") return;
   window.__higgsfieldEvents?.captureException?.(
@@ -4875,7 +4875,7 @@ function RootComponent() {
     /* @__PURE__ */ jsxRuntimeExports.jsx(MobileQuickBar, {})
   ] });
 }
-const $$splitComponentImporter$9 = () => import("./index-D2D5n1W3.js");
+const $$splitComponentImporter$9 = () => import("./index-D6vd-2xl.js");
 const Route$b = createFileRoute()({
   head: () => ({
     links: [{
@@ -4886,7 +4886,7 @@ const Route$b = createFileRoute()({
   }),
   component: lazyRouteComponent($$splitComponentImporter$9, "component")
 });
-const $$splitComponentImporter$8 = () => import("./about-B_D8SJtw.js");
+const $$splitComponentImporter$8 = () => import("./about-og4KXGAh.js");
 const Route$a = createFileRoute()({
   head: () => ({
     meta: [{
@@ -4898,7 +4898,7 @@ const Route$a = createFileRoute()({
   }),
   component: lazyRouteComponent($$splitComponentImporter$8, "component")
 });
-const $$splitComponentImporter$7 = () => import("./client-area-CEzNAG2w.js");
+const $$splitComponentImporter$7 = () => import("./client-area-BrgEgoWn.js");
 const Route$9 = createFileRoute()({
   head: () => ({
     meta: [{
@@ -4910,7 +4910,7 @@ const Route$9 = createFileRoute()({
   }),
   component: lazyRouteComponent($$splitComponentImporter$7, "component")
 });
-const $$splitComponentImporter$6 = () => import("./experiences-D2p1MM5o.js");
+const $$splitComponentImporter$6 = () => import("./experiences-Dg-WNVSN.js");
 const Route$8 = createFileRoute()({
   head: () => ({
     meta: [{
@@ -4922,7 +4922,7 @@ const Route$8 = createFileRoute()({
   }),
   component: lazyRouteComponent($$splitComponentImporter$6, "component")
 });
-const $$splitComponentImporter$5 = () => import("./faq-e5gbHKbl.js");
+const $$splitComponentImporter$5 = () => import("./faq-_EUX5mu8.js");
 const Route$7 = createFileRoute()({
   head: () => ({
     meta: [{
@@ -4934,7 +4934,7 @@ const Route$7 = createFileRoute()({
   }),
   component: lazyRouteComponent($$splitComponentImporter$5, "component")
 });
-const $$splitComponentImporter$4 = () => import("./inquire-BxDjXo6V.js");
+const $$splitComponentImporter$4 = () => import("./inquire-CsSFPv75.js");
 const Route$6 = createFileRoute()({
   validateSearch: (search) => ({
     type: typeof search.type === "string" ? search.type : void 0
@@ -4949,7 +4949,7 @@ const Route$6 = createFileRoute()({
   }),
   component: lazyRouteComponent($$splitComponentImporter$4, "component")
 });
-const $$splitComponentImporter$3 = () => import("./locations-BjkVfAYV.js");
+const $$splitComponentImporter$3 = () => import("./locations-C7-FAe2y.js");
 const Route$5 = createFileRoute()({
   head: () => ({
     meta: [{
@@ -4982,7 +4982,7 @@ const Route$4 = createFileRoute()({
     }
   }
 });
-const $$splitComponentImporter$2 = () => import("./sessions-DJ7XT2uA.js");
+const $$splitComponentImporter$2 = () => import("./sessions-Cz3qTqWR.js");
 const Route$3 = createFileRoute()({
   head: () => ({
     meta: [{
@@ -5021,19 +5021,19 @@ const Route$2 = createFileRoute()({
     }
   }
 });
-const $$splitComponentImporter$1 = () => import("./index-D1gLdb4t.js");
+const $$splitComponentImporter$1 = () => import("./index-sEQ6kGy4.js");
 const Route$1 = createFileRoute()({
   head: () => ({
     meta: [{
       title: "Portfolio | Heart & Homestead Photography"
     }, {
       name: "description",
-      content: "Scroll through families, children, couples, branding, products, and experiences — open any album for the full collection."
+      content: "Families, children, couples, branding, products, and experiences — the collections of Heart & Homestead Photography, Southern Indiana."
     }]
   }),
   component: lazyRouteComponent($$splitComponentImporter$1, "component")
 });
-const $$splitComponentImporter = () => import("./_category-DAZqdQN5.js");
+const $$splitComponentImporter = () => import("./_category-DwdOlM-0.js");
 const Route2 = createFileRoute()({
   head: () => ({
     meta: [{
