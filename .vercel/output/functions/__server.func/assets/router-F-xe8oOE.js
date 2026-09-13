@@ -3976,7 +3976,7 @@ var QueryClient = class {
     this.#mutationCache.clear();
   }
 };
-const appCss = "/assets/styles-D1eD8wwE.css";
+const appCss = "/assets/styles-FLA0jEAs.css";
 function reportHiggsfieldError(error, context = {}) {
   if (typeof window === "undefined") return;
   window.__higgsfieldEvents?.captureException?.(
@@ -4875,7 +4875,7 @@ function RootComponent() {
     /* @__PURE__ */ jsxRuntimeExports.jsx(MobileQuickBar, {})
   ] });
 }
-const $$splitComponentImporter$9 = () => import("./index-DMw_qFyH.js");
+const $$splitComponentImporter$9 = () => import("./index-0NKLpczM.js");
 const Route$b = createFileRoute()({
   head: () => ({
     links: [{
@@ -4886,7 +4886,7 @@ const Route$b = createFileRoute()({
   }),
   component: lazyRouteComponent($$splitComponentImporter$9, "component")
 });
-const $$splitComponentImporter$8 = () => import("./about-BaBwAEDQ.js");
+const $$splitComponentImporter$8 = () => import("./about-DQkjNuRG.js");
 const Route$a = createFileRoute()({
   head: () => ({
     meta: [{
@@ -4898,7 +4898,7 @@ const Route$a = createFileRoute()({
   }),
   component: lazyRouteComponent($$splitComponentImporter$8, "component")
 });
-const $$splitComponentImporter$7 = () => import("./client-area-CsvzXnO5.js");
+const $$splitComponentImporter$7 = () => import("./client-area-CPtBbyp3.js");
 const Route$9 = createFileRoute()({
   head: () => ({
     meta: [{
@@ -4910,7 +4910,7 @@ const Route$9 = createFileRoute()({
   }),
   component: lazyRouteComponent($$splitComponentImporter$7, "component")
 });
-const $$splitComponentImporter$6 = () => import("./experiences-CIOgYnW3.js");
+const $$splitComponentImporter$6 = () => import("./experiences-YxObxsQl.js");
 const Route$8 = createFileRoute()({
   head: () => ({
     meta: [{
@@ -4922,7 +4922,7 @@ const Route$8 = createFileRoute()({
   }),
   component: lazyRouteComponent($$splitComponentImporter$6, "component")
 });
-const $$splitComponentImporter$5 = () => import("./faq-DY4QPTMC.js");
+const $$splitComponentImporter$5 = () => import("./faq-Cj7azOzr.js");
 const Route$7 = createFileRoute()({
   head: () => ({
     meta: [{
@@ -4934,7 +4934,7 @@ const Route$7 = createFileRoute()({
   }),
   component: lazyRouteComponent($$splitComponentImporter$5, "component")
 });
-const $$splitComponentImporter$4 = () => import("./inquire-DPb2fnt9.js");
+const $$splitComponentImporter$4 = () => import("./inquire-DV2Eztcn.js");
 const Route$6 = createFileRoute()({
   validateSearch: (search) => ({
     type: typeof search.type === "string" ? search.type : void 0
@@ -4949,7 +4949,7 @@ const Route$6 = createFileRoute()({
   }),
   component: lazyRouteComponent($$splitComponentImporter$4, "component")
 });
-const $$splitComponentImporter$3 = () => import("./locations-DoXI1HJA.js");
+const $$splitComponentImporter$3 = () => import("./locations-D1uwM1aO.js");
 const Route$5 = createFileRoute()({
   head: () => ({
     meta: [{
@@ -4982,7 +4982,7 @@ const Route$4 = createFileRoute()({
     }
   }
 });
-const $$splitComponentImporter$2 = () => import("./sessions-B_zXRttM.js");
+const $$splitComponentImporter$2 = () => import("./sessions-Dixp45XP.js");
 const Route$3 = createFileRoute()({
   head: () => ({
     meta: [{
@@ -5021,7 +5021,7 @@ const Route$2 = createFileRoute()({
     }
   }
 });
-const $$splitComponentImporter$1 = () => import("./index-CcT5sqmB.js");
+const $$splitComponentImporter$1 = () => import("./index-BHOMe-Hz.js");
 const Route$1 = createFileRoute()({
   head: () => ({
     meta: [{
@@ -5033,7 +5033,7 @@ const Route$1 = createFileRoute()({
   }),
   component: lazyRouteComponent($$splitComponentImporter$1, "component")
 });
-const $$splitComponentImporter = () => import("./_category-BurGPYaW.js");
+const $$splitComponentImporter = () => import("./_category-DennXbO5.js");
 const Route2 = createFileRoute()({
   head: () => ({
     meta: [{
@@ -5144,7 +5144,6 @@ export {
   PORTFOLIO_CATEGORIES as b,
   c$2 as c,
   Route2 as d,
-  n,
   p,
   router as r
 };

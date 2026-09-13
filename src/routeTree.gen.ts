@@ -16,10 +16,11 @@ import { Route as ExperiencesRouteImport } from './routes/experiences'
 import { Route as FaqRouteImport } from './routes/faq'
 import { Route as InquireRouteImport } from './routes/inquire'
 import { Route as LocationsRouteImport } from './routes/locations'
-import { Route as PortfolioRouteImport } from './routes/portfolio'
 import { Route as RobotsDottxtRouteImport } from './routes/robots[.]txt'
 import { Route as SessionsRouteImport } from './routes/sessions'
 import { Route as SitemapDotxmlRouteImport } from './routes/sitemap[.]xml'
+import { Route as PortfolioIndexRouteImport } from './routes/portfolio/index'
+import { Route as PortfolioCategoryRouteImport } from './routes/portfolio/$category'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
@@ -56,11 +57,6 @@ const LocationsRoute = LocationsRouteImport.update({
   path: '/locations',
   getParentRoute: () => rootRouteImport,
 } as any)
-const PortfolioRoute = PortfolioRouteImport.update({
-  id: '/portfolio',
-  path: '/portfolio',
-  getParentRoute: () => rootRouteImport,
-} as any)
 const RobotsDottxtRoute = RobotsDottxtRouteImport.update({
   id: '/robots.txt',
   path: '/robots.txt',
@@ -76,6 +72,16 @@ const SitemapDotxmlRoute = SitemapDotxmlRouteImport.update({
   path: '/sitemap.xml',
   getParentRoute: () => rootRouteImport,
 } as any)
+const PortfolioIndexRoute = PortfolioIndexRouteImport.update({
+  id: '/portfolio/',
+  path: '/portfolio/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PortfolioCategoryRoute = PortfolioCategoryRouteImport.update({
+  id: '/portfolio/$category',
+  path: '/portfolio/$category',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
@@ -85,10 +91,11 @@ export interface FileRoutesByFullPath {
   '/faq': typeof FaqRoute
   '/inquire': typeof InquireRoute
   '/locations': typeof LocationsRoute
-  '/portfolio': typeof PortfolioRoute
   '/robots.txt': typeof RobotsDottxtRoute
   '/sessions': typeof SessionsRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
+  '/portfolio/$category': typeof PortfolioCategoryRoute
+  '/portfolio/': typeof PortfolioIndexRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
@@ -98,10 +105,11 @@ export interface FileRoutesByTo {
   '/faq': typeof FaqRoute
   '/inquire': typeof InquireRoute
   '/locations': typeof LocationsRoute
-  '/portfolio': typeof PortfolioRoute
   '/robots.txt': typeof RobotsDottxtRoute
   '/sessions': typeof SessionsRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
+  '/portfolio/$category': typeof PortfolioCategoryRoute
+  '/portfolio': typeof PortfolioIndexRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
@@ -112,10 +120,11 @@ export interface FileRoutesById {
   '/faq': typeof FaqRoute
   '/inquire': typeof InquireRoute
   '/locations': typeof LocationsRoute
-  '/portfolio': typeof PortfolioRoute
   '/robots.txt': typeof RobotsDottxtRoute
   '/sessions': typeof SessionsRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
+  '/portfolio/$category': typeof PortfolioCategoryRoute
+  '/portfolio/': typeof PortfolioIndexRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
@@ -127,10 +136,11 @@ export interface FileRouteTypes {
     | '/faq'
     | '/inquire'
     | '/locations'
-    | '/portfolio'
     | '/robots.txt'
     | '/sessions'
     | '/sitemap.xml'
+    | '/portfolio/$category'
+    | '/portfolio/'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
@@ -140,10 +150,11 @@ export interface FileRouteTypes {
     | '/faq'
     | '/inquire'
     | '/locations'
-    | '/portfolio'
     | '/robots.txt'
     | '/sessions'
     | '/sitemap.xml'
+    | '/portfolio/$category'
+    | '/portfolio'
   id:
     | '__root__'
     | '/'
@@ -153,10 +164,11 @@ export interface FileRouteTypes {
     | '/faq'
     | '/inquire'
     | '/locations'
-    | '/portfolio'
     | '/robots.txt'
     | '/sessions'
     | '/sitemap.xml'
+    | '/portfolio/$category'
+    | '/portfolio/'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
@@ -167,10 +179,11 @@ export interface RootRouteChildren {
   FaqRoute: typeof FaqRoute
   InquireRoute: typeof InquireRoute
   LocationsRoute: typeof LocationsRoute
-  PortfolioRoute: typeof PortfolioRoute
   RobotsDottxtRoute: typeof RobotsDottxtRoute
   SessionsRoute: typeof SessionsRoute
   SitemapDotxmlRoute: typeof SitemapDotxmlRoute
+  PortfolioCategoryRoute: typeof PortfolioCategoryRoute
+  PortfolioIndexRoute: typeof PortfolioIndexRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -224,13 +237,6 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof LocationsRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/portfolio': {
-      id: '/portfolio'
-      path: '/portfolio'
-      fullPath: '/portfolio'
-      preLoaderRoute: typeof PortfolioRouteImport
-      parentRoute: typeof rootRouteImport
-    }
     '/robots.txt': {
       id: '/robots.txt'
       path: '/robots.txt'
@@ -252,6 +258,20 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof SitemapDotxmlRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/portfolio/': {
+      id: '/portfolio/'
+      path: '/portfolio'
+      fullPath: '/portfolio/'
+      preLoaderRoute: typeof PortfolioIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/portfolio/$category': {
+      id: '/portfolio/$category'
+      path: '/portfolio/$category'
+      fullPath: '/portfolio/$category'
+      preLoaderRoute: typeof PortfolioCategoryRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
@@ -263,10 +283,11 @@ const rootRouteChildren: RootRouteChildren = {
   FaqRoute: FaqRoute,
   InquireRoute: InquireRoute,
   LocationsRoute: LocationsRoute,
-  PortfolioRoute: PortfolioRoute,
   RobotsDottxtRoute: RobotsDottxtRoute,
   SessionsRoute: SessionsRoute,
   SitemapDotxmlRoute: SitemapDotxmlRoute,
+  PortfolioCategoryRoute: PortfolioCategoryRoute,
+  PortfolioIndexRoute: PortfolioIndexRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)

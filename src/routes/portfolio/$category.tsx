@@ -1,5 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { PortfolioGallery } from "../../components/site/PortfolioGallery";
+import { AlbumViewer } from "../../components/site/AlbumViewer";
 import { PORTFOLIO_CATEGORIES } from "../../components/site/site-data";
 
 export const Route = createFileRoute("/portfolio/$category")({
@@ -27,23 +27,23 @@ function CategoryPage() {
   return (
     <>
       <section className="page-hero is-dark">
-        <div className="mx-auto max-w-7xl px-5 py-16 text-center sm:px-8 sm:py-20">
+        <div className="mx-auto max-w-7xl px-5 py-14 text-center sm:px-8 sm:py-16">
           <Link
             to="/portfolio"
             className="text-[0.68rem] font-semibold uppercase tracking-[0.22em] text-ivory/70 transition-colors hover:text-ivory"
           >
-            Back to all portfolios
+            All albums
           </Link>
           <h1 className="mt-4 text-4xl leading-tight text-ivory sm:text-5xl">{found.label}</h1>
-          <p className="mx-auto mt-4 max-w-xl font-accent text-lg italic text-ivory/75 sm:text-xl">
-            {found.images.length} photographs
+          <p className="mx-auto mt-3 font-accent text-lg italic text-ivory/75">
+            {found.images.length} photographs · use the arrows or your keyboard
           </p>
         </div>
       </section>
 
       <section className="bg-ivory">
-        <div className="mx-auto max-w-7xl px-5 py-16 sm:px-8 sm:py-24">
-          <PortfolioGallery categoryId={found.id} />
+        <div className="mx-auto max-w-5xl px-5 py-14 sm:px-8 sm:py-20">
+          <AlbumViewer categoryId={found.id} />
         </div>
       </section>
     </>
