@@ -90,9 +90,9 @@ function PortfolioIndex() {
           </ul>
 
           {comingSoon.length > 0 && (
-            <p className="mx-auto mt-24 max-w-lg border-t border-taupe/50 pt-6 text-center text-sm text-charcoal/60">
-              {comingSoon.map((c) => c.label).join(", ")} collections are being photographed —
-              they'll join the portfolio soon.
+            <p className="mx-auto mt-24 max-w-lg border-t border-taupe/50 pt-6 text-center font-accent text-lg italic text-charcoal/70">
+              The collections are being curated — every photograph will find its
+              place here soon.
             </p>
           )}
         </div>

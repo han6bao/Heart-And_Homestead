@@ -1,5 +1,5 @@
 import { T as jsxRuntimeExports } from "../server.js";
-import { b as PORTFOLIO_CATEGORIES, L as Link, c } from "./router-CJOoSOAv.js";
+import { b as PORTFOLIO_CATEGORIES, L as Link, c } from "./router-DLOYiVyR.js";
 import "node:async_hooks";
 import "node:stream";
 import "node:stream/web";
@@ -39,10 +39,7 @@ function PortfolioIndex() {
           ] })
         ] })
       ] }) }, category.id)) }),
-      comingSoon.length > 0 && /* @__PURE__ */ jsxRuntimeExports.jsxs("p", { className: "mx-auto mt-24 max-w-lg border-t border-taupe/50 pt-6 text-center text-sm text-charcoal/60", children: [
-        comingSoon.map((c2) => c2.label).join(", "),
-        " collections are being photographed — they'll join the portfolio soon."
-      ] })
+      comingSoon.length > 0 && /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "mx-auto mt-24 max-w-lg border-t border-taupe/50 pt-6 text-center font-accent text-lg italic text-charcoal/70", children: "The collections are being curated — every photograph will find its place here soon." })
     ] }) })
   ] });
 }
