@@ -64,7 +64,7 @@ export const SESSION_TYPES: SessionType[] = [
       "A private gallery of finished images on Pixieset",
       "Photographs you will treasure for generations",
     ],
-    image: "https://d2ol7oe51mr4n9.cloudfront.net/user_3DyScwqW9PJnlbQPOYfInCDp9WB/7c128b1d-e4a0-4dcf-a782-9f18ddce7096.jpg",
+    placeholder: true,
   },
   {
     id: "seniors",
@@ -118,7 +118,7 @@ export const SESSION_TYPES: SessionType[] = [
       "A private gallery of finished images on Pixieset",
       "Photographs of this season of your love",
     ],
-    image: "https://d2ol7oe51mr4n9.cloudfront.net/user_3DyScwqW9PJnlbQPOYfInCDp9WB/c5c82978-9da3-4b4b-890d-b0a79f6cf905.jpg",
+    placeholder: true,
   },
   {
     id: "branding",
@@ -136,7 +136,7 @@ export const SESSION_TYPES: SessionType[] = [
       "Social media and website-ready visuals",
       "Imagery that makes your brand feel like you",
     ],
-    image: "https://d2ol7oe51mr4n9.cloudfront.net/user_3DyScwqW9PJnlbQPOYfInCDp9WB/ad6effa6-2e63-483e-ba93-eec18ee5f61a.jpg",
+    placeholder: true,
   },
   {
     id: "events",
@@ -172,7 +172,7 @@ export const SESSION_TYPES: SessionType[] = [
       "A private gallery of finished images on Pixieset",
       "Portraits that are truly yours",
     ],
-    image: "https://d2ol7oe51mr4n9.cloudfront.net/user_3DyScwqW9PJnlbQPOYfInCDp9WB/bde8000a-89af-4541-b3ae-22c51d8419b3.jpg",
+    placeholder: true,
   },
 ];
 

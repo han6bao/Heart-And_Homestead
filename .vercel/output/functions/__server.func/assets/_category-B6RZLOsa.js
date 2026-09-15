@@ -1,5 +1,5 @@
 import { M as reactExports, T as jsxRuntimeExports } from "../server.js";
-import { p, b as PORTFOLIO_CATEGORIES, d as Route, L as Link } from "./router-DYLVSEh1.js";
+import { p, b as PORTFOLIO_CATEGORIES, d as Route, L as Link } from "./router-BD4BEtPQ.js";
 import "node:async_hooks";
 import "node:stream";
 import "node:stream/web";

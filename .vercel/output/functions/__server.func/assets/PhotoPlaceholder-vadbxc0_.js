@@ -1,5 +1,5 @@
 import { M as reactExports, T as jsxRuntimeExports } from "../server.js";
-import { p } from "./router-DYLVSEh1.js";
+import { p } from "./router-BD4BEtPQ.js";
 const e$1 = /* @__PURE__ */ new Map([
   [
     "bold",

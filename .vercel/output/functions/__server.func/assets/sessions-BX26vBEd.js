@@ -1,6 +1,6 @@
 import { T as jsxRuntimeExports } from "../server.js";
-import { S as SESSION_TYPES, L as Link, O as OPTION_BY_SESSION } from "./router-DYLVSEh1.js";
-import { P as PhotoPlaceholder } from "./PhotoPlaceholder-J9k7GdLj.js";
+import { S as SESSION_TYPES, L as Link, O as OPTION_BY_SESSION } from "./router-BD4BEtPQ.js";
+import { P as PhotoPlaceholder } from "./PhotoPlaceholder-vadbxc0_.js";
 import "node:async_hooks";
 import "node:stream";
 import "node:stream/web";
@@ -38,7 +38,7 @@ function Sessions() {
     ] }) }) }),
     /* @__PURE__ */ jsxRuntimeExports.jsx("section", { className: "bg-ivory", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "mx-auto max-w-7xl px-5 py-20 sm:px-8 sm:py-28", children: [
       /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "mx-auto max-w-2xl text-center font-accent text-xl italic leading-relaxed text-charcoal/80 sm:text-2xl", children: "Before your session, we'll talk about what matters to you: who you are photographing, what you want to remember, the location, your style, and the feeling you want your photographs to have. From there, your session is built around you." }),
-      /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "mt-16", children: SESSION_TYPES.map((session, i) => /* @__PURE__ */ jsxRuntimeExports.jsxs("article", { id: session.id, "data-reveal": true, className: "grid gap-8 border-t border-taupe/50 py-12 first:border-t-0 first:pt-0 last:pb-2 lg:grid-cols-12 lg:gap-14", children: [
+      /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "mt-16", children: SESSION_TYPES.map((session, i) => /* @__PURE__ */ jsxRuntimeExports.jsxs("article", { id: session.id, "data-reveal": true, className: "grid gap-10 border-t border-taupe/50 py-12 first:border-t-0 first:pt-0 last:pb-2 lg:grid-cols-12 lg:gap-24", children: [
         /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "lg:col-span-5", children: [
           /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "font-accent text-lg italic text-sage", "aria-hidden": "true", children: String(i + 1).padStart(2, "0") }),
           /* @__PURE__ */ jsxRuntimeExports.jsx("h2", { className: "mt-2 text-2xl leading-tight sm:text-3xl", children: session.name }),
@@ -58,7 +58,7 @@ function Sessions() {
           session.image ? /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "photo-frame natural mt-7", children: /* @__PURE__ */ jsxRuntimeExports.jsx("img", { src: session.image, alt: session.name, loading: "lazy" }) }) : /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "mt-7", children: /* @__PURE__ */ jsxRuntimeExports.jsx(PhotoPlaceholder, { label: session.name, className: "aspect-[16/9]" }) })
         ] }),
         /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "lg:col-span-7", children: [
-          /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "mt-1 text-base leading-relaxed text-charcoal/85 sm:text-lg", children: session.description }),
+          /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "mt-1 max-w-xl text-base leading-relaxed text-charcoal/85 sm:text-lg", children: session.description }),
           /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "mt-8", children: [
             /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "text-[0.7rem] font-semibold uppercase tracking-[0.2em] text-forest", children: "What clients receive" }),
             /* @__PURE__ */ jsxRuntimeExports.jsx("ul", { className: "mt-4 space-y-2.5", children: session.receive.map((item) => /* @__PURE__ */ jsxRuntimeExports.jsxs("li", { className: "flex items-baseline gap-3 text-base text-charcoal/85", children: [

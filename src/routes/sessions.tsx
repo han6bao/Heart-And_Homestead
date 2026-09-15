@@ -82,7 +82,7 @@ function Sessions() {
               <article
                 key={session.id}
                 id={session.id}
-                data-reveal className="grid gap-8 border-t border-taupe/50 py-12 first:border-t-0 first:pt-0 last:pb-2 lg:grid-cols-12 lg:gap-14"
+                data-reveal className="grid gap-10 border-t border-taupe/50 py-12 first:border-t-0 first:pt-0 last:pb-2 lg:grid-cols-12 lg:gap-24"
               >
                 <div className="lg:col-span-5">
                   <p className="font-accent text-lg italic text-sage" aria-hidden="true">
@@ -115,7 +115,7 @@ function Sessions() {
                 </div>
 
                 <div className="lg:col-span-7">
-                  <p className="mt-1 text-base leading-relaxed text-charcoal/85 sm:text-lg">
+                  <p className="mt-1 max-w-xl text-base leading-relaxed text-charcoal/85 sm:text-lg">
                     {session.description}
                   </p>
                   <div className="mt-8">
