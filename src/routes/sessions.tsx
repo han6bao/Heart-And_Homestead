@@ -152,31 +152,42 @@ function Sessions() {
 
       {/* Booking process */}
       <section className="border-t border-parchment bg-ivory">
-        <div className="mx-auto max-w-7xl px-5 py-20 sm:px-8 sm:py-24">
-          <BotanicalDivider />
-          <h2 className="mt-8 text-center text-3xl leading-tight sm:text-4xl lg:text-[2.75rem]">
+        <div className="mx-auto max-w-5xl px-5 py-20 sm:px-8 sm:py-24">
+          <div className="flex items-center justify-center gap-5" aria-hidden="true">
+            <span className="h-px w-16 bg-emerald-deep/30 sm:w-24" />
+            <svg width="26" height="26" viewBox="0 0 26 26" fill="none">
+              <path
+                d="M13 1 L16 10 L25 13 L16 16 L13 25 L10 16 L1 13 L10 10 Z"
+                fill="var(--color-emerald-deep)"
+                opacity="0.8"
+              />
+            </svg>
+            <span className="h-px w-16 bg-emerald-deep/30 sm:w-24" />
+          </div>
+          <h2 className="mt-7 text-center text-3xl leading-tight sm:text-4xl lg:text-[2.75rem]">
             How we'll work <em className="font-accent italic">together</em>
           </h2>
-          <div className="mx-auto mt-14 max-w-3xl">
-            <ol className="space-y-10">
-              {PROCESS.map((step, i) => (
-                <li key={step.name} className="grid gap-3 sm:grid-cols-[4rem_1fr]">
-                  <span
-                    className="font-accent text-3xl italic leading-none text-sage"
-                    aria-hidden="true"
-                  >
-                    {String(i + 1).padStart(2, "0")}
-                  </span>
-                  <div>
-                    <h3 className="text-xl text-emerald-deep sm:text-2xl">{step.name}</h3>
-                    <p className="mt-2 max-w-xl text-base leading-relaxed text-charcoal/80">
-                      {step.detail}
-                    </p>
-                  </div>
-                </li>
-              ))}
-            </ol>
-          </div>
+          <ol className="mx-auto mt-14 max-w-3xl divide-y divide-taupe/50 border-y border-taupe/50">
+            {PROCESS.map((step, i) => (
+              <li
+                key={step.name}
+                className="grid gap-3 py-7 first:pt-8 last:pb-8 sm:grid-cols-[4.5rem_1fr]"
+              >
+                <span
+                  className="font-accent text-2xl italic leading-none text-sage sm:text-3xl"
+                  aria-hidden="true"
+                >
+                  {String(i + 1).padStart(2, "0")}
+                </span>
+                <div>
+                  <h3 className="text-xl text-emerald-deep sm:text-2xl">{step.name}</h3>
+                  <p className="mt-2 max-w-xl text-[15px] leading-relaxed text-charcoal/80 sm:text-base">
+                    {step.detail}
+                  </p>
+                </div>
+              </li>
+            ))}
+          </ol>
         </div>
       </section>
 
