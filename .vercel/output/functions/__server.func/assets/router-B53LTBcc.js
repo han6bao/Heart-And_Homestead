@@ -3976,7 +3976,7 @@ var QueryClient = class {
     this.#mutationCache.clear();
   }
 };
-const appCss = "/assets/styles-q6atA2x2.css";
+const appCss = "/assets/styles-D-IzKP0m.css";
 function reportHiggsfieldError(error, context = {}) {
   if (typeof window === "undefined") return;
   window.__higgsfieldEvents?.captureException?.(
@@ -4259,7 +4259,7 @@ const SESSION_TYPES = [
       "A private gallery of finished images on Pixieset",
       "Photographs you will treasure for generations"
     ],
-    image: "https://d2ol7oe51mr4n9.cloudfront.net/user_3DyScwqW9PJnlbQPOYfInCDp9WB/e0a180a7-1b08-49c8-b58f-90c31a874aea.jpg"
+    image: "https://d2ol7oe51mr4n9.cloudfront.net/user_3DyScwqW9PJnlbQPOYfInCDp9WB/3d42d1b3-bda0-40e8-aecd-f3b0abb23456.jpg"
   },
   {
     id: "seniors",
@@ -4289,7 +4289,7 @@ const SESSION_TYPES = [
       "A private gallery of finished images on Pixieset",
       "Photographs to share with your child one day"
     ],
-    image: "https://d2ol7oe51mr4n9.cloudfront.net/user_3DyScwqW9PJnlbQPOYfInCDp9WB/e4624f36-8b67-47b8-9ad9-0589ccb8bef7.jpg"
+    placeholder: true
   },
   {
     id: "couples",
@@ -4304,7 +4304,7 @@ const SESSION_TYPES = [
       "A private gallery of finished images on Pixieset",
       "Photographs of this season of your love"
     ],
-    image: "https://d2ol7oe51mr4n9.cloudfront.net/user_3DyScwqW9PJnlbQPOYfInCDp9WB/895f8945-fdf3-44ef-8187-b6351318f2ef.jpg"
+    image: "https://d2ol7oe51mr4n9.cloudfront.net/user_3DyScwqW9PJnlbQPOYfInCDp9WB/c5c82978-9da3-4b4b-890d-b0a79f6cf905.jpg"
   },
   {
     id: "branding",
@@ -4319,7 +4319,7 @@ const SESSION_TYPES = [
       "Social media and website-ready visuals",
       "Imagery that makes your brand feel like you"
     ],
-    image: "https://d2ol7oe51mr4n9.cloudfront.net/user_3DyScwqW9PJnlbQPOYfInCDp9WB/0626fdae-e5a1-42d3-b033-a9635ab38444.jpg"
+    image: "https://d2ol7oe51mr4n9.cloudfront.net/user_3DyScwqW9PJnlbQPOYfInCDp9WB/ad6effa6-2e63-483e-ba93-eec18ee5f61a.jpg"
   },
   {
     id: "events",
@@ -4875,7 +4875,7 @@ function RootComponent() {
     /* @__PURE__ */ jsxRuntimeExports.jsx(MobileQuickBar, {})
   ] });
 }
-const $$splitComponentImporter$9 = () => import("./index-DMpoVIdY.js");
+const $$splitComponentImporter$9 = () => import("./index-5r650Q7w.js");
 const Route$b = createFileRoute()({
   head: () => ({
     links: [{
@@ -4886,7 +4886,7 @@ const Route$b = createFileRoute()({
   }),
   component: lazyRouteComponent($$splitComponentImporter$9, "component")
 });
-const $$splitComponentImporter$8 = () => import("./about-CYGGNnqA.js");
+const $$splitComponentImporter$8 = () => import("./about-T6whwCEs.js");
 const Route$a = createFileRoute()({
   head: () => ({
     meta: [{
@@ -4898,7 +4898,7 @@ const Route$a = createFileRoute()({
   }),
   component: lazyRouteComponent($$splitComponentImporter$8, "component")
 });
-const $$splitComponentImporter$7 = () => import("./client-area-2-fUk62R.js");
+const $$splitComponentImporter$7 = () => import("./client-area-DzxU-ICO.js");
 const Route$9 = createFileRoute()({
   head: () => ({
     meta: [{
@@ -4910,7 +4910,7 @@ const Route$9 = createFileRoute()({
   }),
   component: lazyRouteComponent($$splitComponentImporter$7, "component")
 });
-const $$splitComponentImporter$6 = () => import("./experiences-CMeUHBqx.js");
+const $$splitComponentImporter$6 = () => import("./experiences-DtW360TS.js");
 const Route$8 = createFileRoute()({
   head: () => ({
     meta: [{
@@ -4922,7 +4922,7 @@ const Route$8 = createFileRoute()({
   }),
   component: lazyRouteComponent($$splitComponentImporter$6, "component")
 });
-const $$splitComponentImporter$5 = () => import("./faq-B3_xkpaF.js");
+const $$splitComponentImporter$5 = () => import("./faq-0cg19Cr-.js");
 const Route$7 = createFileRoute()({
   head: () => ({
     meta: [{
@@ -4934,7 +4934,7 @@ const Route$7 = createFileRoute()({
   }),
   component: lazyRouteComponent($$splitComponentImporter$5, "component")
 });
-const $$splitComponentImporter$4 = () => import("./inquire-5LGawWFM.js");
+const $$splitComponentImporter$4 = () => import("./inquire-DqbO42Wn.js");
 const Route$6 = createFileRoute()({
   validateSearch: (search) => ({
     type: typeof search.type === "string" ? search.type : void 0
@@ -4949,7 +4949,7 @@ const Route$6 = createFileRoute()({
   }),
   component: lazyRouteComponent($$splitComponentImporter$4, "component")
 });
-const $$splitComponentImporter$3 = () => import("./locations-BoxjhUfu.js");
+const $$splitComponentImporter$3 = () => import("./locations-BReX8E-G.js");
 const Route$5 = createFileRoute()({
   head: () => ({
     meta: [{
@@ -4982,7 +4982,7 @@ const Route$4 = createFileRoute()({
     }
   }
 });
-const $$splitComponentImporter$2 = () => import("./sessions-Bk7XyEwr.js");
+const $$splitComponentImporter$2 = () => import("./sessions-CIZDUnKR.js");
 const Route$3 = createFileRoute()({
   head: () => ({
     meta: [{
@@ -5021,7 +5021,7 @@ const Route$2 = createFileRoute()({
     }
   }
 });
-const $$splitComponentImporter$1 = () => import("./index-DCZ4UFeU.js");
+const $$splitComponentImporter$1 = () => import("./index-CWTXgwWU.js");
 const Route$1 = createFileRoute()({
   head: () => ({
     meta: [{
@@ -5033,7 +5033,7 @@ const Route$1 = createFileRoute()({
   }),
   component: lazyRouteComponent($$splitComponentImporter$1, "component")
 });
-const $$splitComponentImporter = () => import("./_category-BSTpoH8w.js");
+const $$splitComponentImporter = () => import("./_category-6P8Zu_44.js");
 const Route2 = createFileRoute()({
   head: () => ({
     meta: [{

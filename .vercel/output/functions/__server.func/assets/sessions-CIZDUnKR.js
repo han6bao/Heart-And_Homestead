@@ -1,6 +1,6 @@
 import { T as jsxRuntimeExports } from "../server.js";
-import { S as SESSION_TYPES, L as Link, O as OPTION_BY_SESSION } from "./router-B4igOjWZ.js";
-import { P as PhotoPlaceholder } from "./PhotoPlaceholder-D4MD63_P.js";
+import { S as SESSION_TYPES, L as Link, O as OPTION_BY_SESSION } from "./router-B53LTBcc.js";
+import { P as PhotoPlaceholder } from "./PhotoPlaceholder-d4Pzar29.js";
 import "node:async_hooks";
 import "node:stream";
 import "node:stream/web";
@@ -8,6 +8,12 @@ import "util";
 import "crypto";
 import "async_hooks";
 import "stream";
+const SESSION_ALBUM = {
+  families: "families",
+  couples: "couples",
+  branding: "branding",
+  creative: "creative"
+};
 const PROCESS = [{
   name: "Tell Me Your Story",
   detail: "Complete a short inquiry form so Emily can learn what you're envisioning. There are no wrong answers, only your story."
@@ -55,7 +61,12 @@ function Sessions() {
               session.feel
             ] })
           ] }),
-          session.image ? /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "photo-frame natural mt-7", children: /* @__PURE__ */ jsxRuntimeExports.jsx("img", { src: session.image, alt: session.name, loading: "lazy" }) }) : /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "mt-7", children: /* @__PURE__ */ jsxRuntimeExports.jsx(PhotoPlaceholder, { label: session.name, className: "aspect-[16/9]" }) })
+          session.image && SESSION_ALBUM[session.id] ? /* @__PURE__ */ jsxRuntimeExports.jsx(Link, { to: "/portfolio/$category", params: {
+            category: SESSION_ALBUM[session.id]
+          }, "aria-label": `View the ${session.name} album`, className: "group mt-7 block", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("span", { className: "photo-frame natural relative block w-full", children: [
+            /* @__PURE__ */ jsxRuntimeExports.jsx("img", { src: session.image, alt: `${session.name} - session photograph`, loading: "lazy" }),
+            /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "pointer-events-none absolute inset-0 flex items-end bg-gradient-to-t from-emerald-deep/70 via-emerald-deep/10 to-transparent p-4 opacity-0 transition-opacity duration-300 group-hover:opacity-100", children: /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-[0.68rem] font-semibold uppercase tracking-[0.2em] text-ivory", children: "View the album" }) })
+          ] }) }) : session.image ? /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "photo-frame natural mt-7", children: /* @__PURE__ */ jsxRuntimeExports.jsx("img", { src: session.image, alt: session.name, loading: "lazy" }) }) : /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "mt-7", children: /* @__PURE__ */ jsxRuntimeExports.jsx(PhotoPlaceholder, { label: session.name, className: "aspect-[16/9]" }) })
         ] }),
         /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "lg:col-span-7", children: [
           /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "mt-1 max-w-xl text-base leading-relaxed text-charcoal/85 sm:text-lg", children: session.description }),

@@ -17,6 +17,14 @@ export const Route = createFileRoute("/sessions")({
   component: Sessions,
 });
 
+/* which portfolio album each session links to (only those with photos) */
+const SESSION_ALBUM: Record<string, string> = {
+  families: "families",
+  couples: "couples",
+  branding: "branding",
+  creative: "creative",
+};
+
 const PROCESS = [
   {
     name: "Tell Me Your Story",
@@ -103,7 +111,27 @@ function Sessions() {
                       {session.feel}
                     </p>
                   </div>
-                  {session.image ? (
+                  {session.image && SESSION_ALBUM[session.id] ? (
+                    <Link
+                      to="/portfolio/$category"
+                      params={{ category: SESSION_ALBUM[session.id] }}
+                      aria-label={`View the ${session.name} album`}
+                      className="group mt-7 block"
+                    >
+                      <span className="photo-frame natural relative block w-full">
+                        <img
+                          src={session.image}
+                          alt={`${session.name} - session photograph`}
+                          loading="lazy"
+                        />
+                        <span className="pointer-events-none absolute inset-0 flex items-end bg-gradient-to-t from-emerald-deep/70 via-emerald-deep/10 to-transparent p-4 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                          <span className="text-[0.68rem] font-semibold uppercase tracking-[0.2em] text-ivory">
+                            View the album
+                          </span>
+                        </span>
+                      </span>
+                    </Link>
+                  ) : session.image ? (
                     <div className="photo-frame natural mt-7">
                       <img src={session.image} alt={session.name} loading="lazy" />
                     </div>
