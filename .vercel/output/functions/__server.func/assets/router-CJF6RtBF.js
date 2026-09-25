@@ -3976,7 +3976,7 @@ var QueryClient = class {
     this.#mutationCache.clear();
   }
 };
-const appCss = "/assets/styles-D-IzKP0m.css";
+const appCss = "/assets/styles-QsoGxYdh.css";
 function reportHiggsfieldError(error, context = {}) {
   if (typeof window === "undefined") return;
   window.__higgsfieldEvents?.captureException?.(
@@ -4259,7 +4259,7 @@ const SESSION_TYPES = [
       "A private gallery of finished images on Pixieset",
       "Photographs you will treasure for generations"
     ],
-    image: "https://d2ol7oe51mr4n9.cloudfront.net/user_3DyScwqW9PJnlbQPOYfInCDp9WB/3d42d1b3-bda0-40e8-aecd-f3b0abb23456.jpg"
+    image: "https://d2ol7oe51mr4n9.cloudfront.net/user_3DyScwqW9PJnlbQPOYfInCDp9WB/8d1aabe2-e036-4e8a-9f64-9995769eea0f.jpg"
   },
   {
     id: "seniors",
@@ -4278,7 +4278,7 @@ const SESSION_TYPES = [
   },
   {
     id: "maternity",
-    name: "Maternity + Newborn",
+    name: "Maternity + Newborns",
     short: "Beautifully honest photographs of this season: the waiting, the glow, the quiet anticipation of new life.",
     whoFor: "Mothers-to-be and growing families who want this season remembered.",
     feel: "Gentle, unhurried, and full of warmth. We photograph the realness of this moment: soft light and honest feeling.",
@@ -4304,7 +4304,7 @@ const SESSION_TYPES = [
       "A private gallery of finished images on Pixieset",
       "Photographs of this season of your love"
     ],
-    image: "https://d2ol7oe51mr4n9.cloudfront.net/user_3DyScwqW9PJnlbQPOYfInCDp9WB/c5c82978-9da3-4b4b-890d-b0a79f6cf905.jpg"
+    image: "https://d2ol7oe51mr4n9.cloudfront.net/user_3DyScwqW9PJnlbQPOYfInCDp9WB/b504b0b8-3345-48fa-a346-14a6c9552a39.jpg"
   },
   {
     id: "branding",
@@ -4319,7 +4319,7 @@ const SESSION_TYPES = [
       "Social media and website-ready visuals",
       "Imagery that makes your brand feel like you"
     ],
-    image: "https://d2ol7oe51mr4n9.cloudfront.net/user_3DyScwqW9PJnlbQPOYfInCDp9WB/ad6effa6-2e63-483e-ba93-eec18ee5f61a.jpg"
+    image: "https://d2ol7oe51mr4n9.cloudfront.net/user_3DyScwqW9PJnlbQPOYfInCDp9WB/7c128b1d-e4a0-4dcf-a782-9f18ddce7096.jpg"
   },
   {
     id: "events",
@@ -4466,19 +4466,19 @@ const FAQS = [
 const OPTION_BY_SESSION = {
   families: "Family",
   seniors: "Senior",
-  maternity: "Maternity",
+  maternity: "Maternity + Newborns",
   couples: "Couples / Engagement",
   branding: "Branding",
   events: "Event",
   creative: "Creative Portrait"
 };
 const PORTFOLIO_CATEGORIES = [
-  { id: "families", label: "Families", images: ["https://d2ol7oe51mr4n9.cloudfront.net/user_3DyScwqW9PJnlbQPOYfInCDp9WB/e0a180a7-1b08-49c8-b58f-90c31a874aea.jpg", "https://d2ol7oe51mr4n9.cloudfront.net/user_3DyScwqW9PJnlbQPOYfInCDp9WB/998e3409-208c-4ad7-9cac-fa1b3312b552.jpg", "https://d2ol7oe51mr4n9.cloudfront.net/user_3DyScwqW9PJnlbQPOYfInCDp9WB/10db36c4-2de6-4690-98be-63d1230c89bd.jpg", "https://d2ol7oe51mr4n9.cloudfront.net/user_3DyScwqW9PJnlbQPOYfInCDp9WB/56aff75e-f68d-4edb-b843-f8e228be9302.jpg", "https://d2ol7oe51mr4n9.cloudfront.net/user_3DyScwqW9PJnlbQPOYfInCDp9WB/c38e317b-f4e6-4522-96ad-ece407b91a11.jpg", "https://d2ol7oe51mr4n9.cloudfront.net/user_3DyScwqW9PJnlbQPOYfInCDp9WB/18046339-3293-41e6-8eae-218c4433a2fd.jpg", "https://d2ol7oe51mr4n9.cloudfront.net/user_3DyScwqW9PJnlbQPOYfInCDp9WB/26c9eebe-9e49-4743-81f4-94c7509402f5.jpg", "https://d2ol7oe51mr4n9.cloudfront.net/user_3DyScwqW9PJnlbQPOYfInCDp9WB/987356b9-5907-45fd-acaf-5dc0c569fad8.jpg", "https://d2ol7oe51mr4n9.cloudfront.net/user_3DyScwqW9PJnlbQPOYfInCDp9WB/28669d06-6802-4177-aff7-dfc0c136d1a5.jpg", "https://d2ol7oe51mr4n9.cloudfront.net/user_3DyScwqW9PJnlbQPOYfInCDp9WB/d5e961b5-3316-417a-a1e9-9821f5e97061.jpg", "https://d2ol7oe51mr4n9.cloudfront.net/user_3DyScwqW9PJnlbQPOYfInCDp9WB/1c4f2cef-4016-41c4-8b77-3d9947f5e443.jpg", "https://d2ol7oe51mr4n9.cloudfront.net/user_3DyScwqW9PJnlbQPOYfInCDp9WB/56c6f1cf-6458-490c-b467-ba8290784c75.jpg", "https://d2ol7oe51mr4n9.cloudfront.net/user_3DyScwqW9PJnlbQPOYfInCDp9WB/2de5f466-ac2d-4184-bf06-532e01303d49.jpg", "/assets/gallery/families-46.jpg"], placeholder: false },
+  { id: "families", label: "Families", images: ["https://d2ol7oe51mr4n9.cloudfront.net/user_3DyScwqW9PJnlbQPOYfInCDp9WB/8d1aabe2-e036-4e8a-9f64-9995769eea0f.jpg", "https://d2ol7oe51mr4n9.cloudfront.net/user_3DyScwqW9PJnlbQPOYfInCDp9WB/e0a180a7-1b08-49c8-b58f-90c31a874aea.jpg", "https://d2ol7oe51mr4n9.cloudfront.net/user_3DyScwqW9PJnlbQPOYfInCDp9WB/998e3409-208c-4ad7-9cac-fa1b3312b552.jpg", "https://d2ol7oe51mr4n9.cloudfront.net/user_3DyScwqW9PJnlbQPOYfInCDp9WB/10db36c4-2de6-4690-98be-63d1230c89bd.jpg", "https://d2ol7oe51mr4n9.cloudfront.net/user_3DyScwqW9PJnlbQPOYfInCDp9WB/56aff75e-f68d-4edb-b843-f8e228be9302.jpg", "https://d2ol7oe51mr4n9.cloudfront.net/user_3DyScwqW9PJnlbQPOYfInCDp9WB/c38e317b-f4e6-4522-96ad-ece407b91a11.jpg", "https://d2ol7oe51mr4n9.cloudfront.net/user_3DyScwqW9PJnlbQPOYfInCDp9WB/18046339-3293-41e6-8eae-218c4433a2fd.jpg", "https://d2ol7oe51mr4n9.cloudfront.net/user_3DyScwqW9PJnlbQPOYfInCDp9WB/26c9eebe-9e49-4743-81f4-94c7509402f5.jpg", "https://d2ol7oe51mr4n9.cloudfront.net/user_3DyScwqW9PJnlbQPOYfInCDp9WB/987356b9-5907-45fd-acaf-5dc0c569fad8.jpg", "https://d2ol7oe51mr4n9.cloudfront.net/user_3DyScwqW9PJnlbQPOYfInCDp9WB/28669d06-6802-4177-aff7-dfc0c136d1a5.jpg", "https://d2ol7oe51mr4n9.cloudfront.net/user_3DyScwqW9PJnlbQPOYfInCDp9WB/d5e961b5-3316-417a-a1e9-9821f5e97061.jpg", "https://d2ol7oe51mr4n9.cloudfront.net/user_3DyScwqW9PJnlbQPOYfInCDp9WB/1c4f2cef-4016-41c4-8b77-3d9947f5e443.jpg", "https://d2ol7oe51mr4n9.cloudfront.net/user_3DyScwqW9PJnlbQPOYfInCDp9WB/56c6f1cf-6458-490c-b467-ba8290784c75.jpg", "https://d2ol7oe51mr4n9.cloudfront.net/user_3DyScwqW9PJnlbQPOYfInCDp9WB/2de5f466-ac2d-4184-bf06-532e01303d49.jpg", "/assets/gallery/families-46.jpg"], placeholder: false },
   { id: "children", label: "Children", images: [], placeholder: true },
-  { id: "maternity", label: "Maternity", images: ["https://d2ol7oe51mr4n9.cloudfront.net/user_3DyScwqW9PJnlbQPOYfInCDp9WB/e4624f36-8b67-47b8-9ad9-0589ccb8bef7.jpg"], placeholder: false },
+  { id: "maternity", label: "Maternity + Newborns", images: ["https://d2ol7oe51mr4n9.cloudfront.net/user_3DyScwqW9PJnlbQPOYfInCDp9WB/e4624f36-8b67-47b8-9ad9-0589ccb8bef7.jpg"], placeholder: false },
   { id: "seniors", label: "Seniors", images: [], placeholder: true },
-  { id: "couples", label: "Couples + Engagements", images: ["https://d2ol7oe51mr4n9.cloudfront.net/user_3DyScwqW9PJnlbQPOYfInCDp9WB/895f8945-fdf3-44ef-8187-b6351318f2ef.jpg", "https://d2ol7oe51mr4n9.cloudfront.net/user_3DyScwqW9PJnlbQPOYfInCDp9WB/4506d312-37bc-44d8-8a85-45b2ed91948c.jpg", "https://d2ol7oe51mr4n9.cloudfront.net/user_3DyScwqW9PJnlbQPOYfInCDp9WB/e2f52c0c-e90b-4373-a483-ce74ab8101fd.jpg", "https://d2ol7oe51mr4n9.cloudfront.net/user_3DyScwqW9PJnlbQPOYfInCDp9WB/c1347020-bbae-4456-acaf-e7bfcff7050f.jpg", "https://d2ol7oe51mr4n9.cloudfront.net/user_3DyScwqW9PJnlbQPOYfInCDp9WB/b504b0b8-3345-48fa-a346-14a6c9552a39.jpg", "https://d2ol7oe51mr4n9.cloudfront.net/user_3DyScwqW9PJnlbQPOYfInCDp9WB/081bd16e-7a7e-4637-8a57-60b776aeb645.jpg", "https://d2ol7oe51mr4n9.cloudfront.net/user_3DyScwqW9PJnlbQPOYfInCDp9WB/990804a9-047a-4426-87f6-dbce8e20d937.jpg", "https://d2ol7oe51mr4n9.cloudfront.net/user_3DyScwqW9PJnlbQPOYfInCDp9WB/50c11b40-a199-43a9-a61d-a972f45ee63b.jpg", "https://d2ol7oe51mr4n9.cloudfront.net/user_3DyScwqW9PJnlbQPOYfInCDp9WB/87d08644-9e00-4649-9e84-e9f4e271f8b4.jpg", "https://d2ol7oe51mr4n9.cloudfront.net/user_3DyScwqW9PJnlbQPOYfInCDp9WB/43abc02b-3d45-4040-ac80-c436675053a3.jpg", "https://d2ol7oe51mr4n9.cloudfront.net/user_3DyScwqW9PJnlbQPOYfInCDp9WB/7f47c757-8fe9-4267-aac0-93c65f0eab97.jpg", "https://d2ol7oe51mr4n9.cloudfront.net/user_3DyScwqW9PJnlbQPOYfInCDp9WB/c1ed6854-a7fe-448a-9998-4bc8466f66f4.jpg"], placeholder: false },
-  { id: "branding", label: "Branding + Products", images: ["https://d2ol7oe51mr4n9.cloudfront.net/user_3DyScwqW9PJnlbQPOYfInCDp9WB/0626fdae-e5a1-42d3-b033-a9635ab38444.jpg", "https://d2ol7oe51mr4n9.cloudfront.net/user_3DyScwqW9PJnlbQPOYfInCDp9WB/e3f0a12d-e6f9-494f-a734-bfa7721c1613.jpg", "https://d2ol7oe51mr4n9.cloudfront.net/user_3DyScwqW9PJnlbQPOYfInCDp9WB/7c128b1d-e4a0-4dcf-a782-9f18ddce7096.jpg", "https://d2ol7oe51mr4n9.cloudfront.net/user_3DyScwqW9PJnlbQPOYfInCDp9WB/35c191ab-2675-49ee-b32e-b0e2ad292b8d.jpg", "https://d2ol7oe51mr4n9.cloudfront.net/user_3DyScwqW9PJnlbQPOYfInCDp9WB/7b17322b-c5fa-4d9a-a282-84298dce7687.jpg", "https://d2ol7oe51mr4n9.cloudfront.net/user_3DyScwqW9PJnlbQPOYfInCDp9WB/f27a6e2a-f8c5-454e-89bb-1c4e251e4f9b.jpg", "https://d2ol7oe51mr4n9.cloudfront.net/user_3DyScwqW9PJnlbQPOYfInCDp9WB/c84e5d8e-7326-4ba6-baa9-6925a9d58361.jpg", "https://d2ol7oe51mr4n9.cloudfront.net/user_3DyScwqW9PJnlbQPOYfInCDp9WB/90d6f40d-e3df-4f94-b3ea-45a8a497200a.jpg", "https://d2ol7oe51mr4n9.cloudfront.net/user_3DyScwqW9PJnlbQPOYfInCDp9WB/9ae41329-b6f2-4f21-86bf-261e74ba7ec0.jpg", "https://d2ol7oe51mr4n9.cloudfront.net/user_3DyScwqW9PJnlbQPOYfInCDp9WB/d0bcc7b6-e85e-4693-9c4a-a9d308a1bd30.jpg"], placeholder: false },
+  { id: "couples", label: "Couples + Engagements", images: ["https://d2ol7oe51mr4n9.cloudfront.net/user_3DyScwqW9PJnlbQPOYfInCDp9WB/b504b0b8-3345-48fa-a346-14a6c9552a39.jpg", "https://d2ol7oe51mr4n9.cloudfront.net/user_3DyScwqW9PJnlbQPOYfInCDp9WB/895f8945-fdf3-44ef-8187-b6351318f2ef.jpg", "https://d2ol7oe51mr4n9.cloudfront.net/user_3DyScwqW9PJnlbQPOYfInCDp9WB/4506d312-37bc-44d8-8a85-45b2ed91948c.jpg", "https://d2ol7oe51mr4n9.cloudfront.net/user_3DyScwqW9PJnlbQPOYfInCDp9WB/e2f52c0c-e90b-4373-a483-ce74ab8101fd.jpg", "https://d2ol7oe51mr4n9.cloudfront.net/user_3DyScwqW9PJnlbQPOYfInCDp9WB/c1347020-bbae-4456-acaf-e7bfcff7050f.jpg", "https://d2ol7oe51mr4n9.cloudfront.net/user_3DyScwqW9PJnlbQPOYfInCDp9WB/081bd16e-7a7e-4637-8a57-60b776aeb645.jpg", "https://d2ol7oe51mr4n9.cloudfront.net/user_3DyScwqW9PJnlbQPOYfInCDp9WB/990804a9-047a-4426-87f6-dbce8e20d937.jpg", "https://d2ol7oe51mr4n9.cloudfront.net/user_3DyScwqW9PJnlbQPOYfInCDp9WB/50c11b40-a199-43a9-a61d-a972f45ee63b.jpg", "https://d2ol7oe51mr4n9.cloudfront.net/user_3DyScwqW9PJnlbQPOYfInCDp9WB/87d08644-9e00-4649-9e84-e9f4e271f8b4.jpg", "https://d2ol7oe51mr4n9.cloudfront.net/user_3DyScwqW9PJnlbQPOYfInCDp9WB/43abc02b-3d45-4040-ac80-c436675053a3.jpg", "https://d2ol7oe51mr4n9.cloudfront.net/user_3DyScwqW9PJnlbQPOYfInCDp9WB/7f47c757-8fe9-4267-aac0-93c65f0eab97.jpg", "https://d2ol7oe51mr4n9.cloudfront.net/user_3DyScwqW9PJnlbQPOYfInCDp9WB/c1ed6854-a7fe-448a-9998-4bc8466f66f4.jpg"], placeholder: false },
+  { id: "branding", label: "Branding + Products", images: ["https://d2ol7oe51mr4n9.cloudfront.net/user_3DyScwqW9PJnlbQPOYfInCDp9WB/7c128b1d-e4a0-4dcf-a782-9f18ddce7096.jpg", "https://d2ol7oe51mr4n9.cloudfront.net/user_3DyScwqW9PJnlbQPOYfInCDp9WB/0626fdae-e5a1-42d3-b033-a9635ab38444.jpg", "https://d2ol7oe51mr4n9.cloudfront.net/user_3DyScwqW9PJnlbQPOYfInCDp9WB/e3f0a12d-e6f9-494f-a734-bfa7721c1613.jpg", "https://d2ol7oe51mr4n9.cloudfront.net/user_3DyScwqW9PJnlbQPOYfInCDp9WB/35c191ab-2675-49ee-b32e-b0e2ad292b8d.jpg", "https://d2ol7oe51mr4n9.cloudfront.net/user_3DyScwqW9PJnlbQPOYfInCDp9WB/7b17322b-c5fa-4d9a-a282-84298dce7687.jpg", "https://d2ol7oe51mr4n9.cloudfront.net/user_3DyScwqW9PJnlbQPOYfInCDp9WB/f27a6e2a-f8c5-454e-89bb-1c4e251e4f9b.jpg", "https://d2ol7oe51mr4n9.cloudfront.net/user_3DyScwqW9PJnlbQPOYfInCDp9WB/c84e5d8e-7326-4ba6-baa9-6925a9d58361.jpg", "https://d2ol7oe51mr4n9.cloudfront.net/user_3DyScwqW9PJnlbQPOYfInCDp9WB/90d6f40d-e3df-4f94-b3ea-45a8a497200a.jpg", "https://d2ol7oe51mr4n9.cloudfront.net/user_3DyScwqW9PJnlbQPOYfInCDp9WB/9ae41329-b6f2-4f21-86bf-261e74ba7ec0.jpg", "https://d2ol7oe51mr4n9.cloudfront.net/user_3DyScwqW9PJnlbQPOYfInCDp9WB/d0bcc7b6-e85e-4693-9c4a-a9d308a1bd30.jpg"], placeholder: false },
   { id: "events", label: "Events", images: [], placeholder: true },
   { id: "creative", label: "Creative Portraits", images: ["https://d2ol7oe51mr4n9.cloudfront.net/user_3DyScwqW9PJnlbQPOYfInCDp9WB/bde8000a-89af-4541-b3ae-22c51d8419b3.jpg", "https://d2ol7oe51mr4n9.cloudfront.net/user_3DyScwqW9PJnlbQPOYfInCDp9WB/ad6effa6-2e63-483e-ba93-eec18ee5f61a.jpg", "https://d2ol7oe51mr4n9.cloudfront.net/user_3DyScwqW9PJnlbQPOYfInCDp9WB/72dc724e-a2ea-4a00-80c0-13ad4e8a91e3.jpg", "https://d2ol7oe51mr4n9.cloudfront.net/user_3DyScwqW9PJnlbQPOYfInCDp9WB/2ec8b32e-7906-4c38-94cb-66e30c912032.jpg", "https://d2ol7oe51mr4n9.cloudfront.net/user_3DyScwqW9PJnlbQPOYfInCDp9WB/bd604503-221a-451f-8048-1cb3115c9df3.jpg", "https://d2ol7oe51mr4n9.cloudfront.net/user_3DyScwqW9PJnlbQPOYfInCDp9WB/a922dfaa-4c94-4285-802f-397f33a3a730.jpg", "https://d2ol7oe51mr4n9.cloudfront.net/user_3DyScwqW9PJnlbQPOYfInCDp9WB/dd7c6c84-1472-45e1-ac96-23bc886e7216.jpg", "https://d2ol7oe51mr4n9.cloudfront.net/user_3DyScwqW9PJnlbQPOYfInCDp9WB/60569940-c853-4ae7-8b13-62b098dc0651.jpg"], placeholder: false },
   { id: "experiences", label: "Experiences", images: ["https://d2ol7oe51mr4n9.cloudfront.net/user_3DyScwqW9PJnlbQPOYfInCDp9WB/e3be5f6e-42f6-46f0-a438-72ae0e0d7dfc.jpg", "https://d2ol7oe51mr4n9.cloudfront.net/user_3DyScwqW9PJnlbQPOYfInCDp9WB/18008064-e07e-4f95-9cff-683a42ae3901.jpg", "https://d2ol7oe51mr4n9.cloudfront.net/user_3DyScwqW9PJnlbQPOYfInCDp9WB/2cf5e1da-4dc9-48bb-a876-634bbded0d96.jpg", "https://d2ol7oe51mr4n9.cloudfront.net/user_3DyScwqW9PJnlbQPOYfInCDp9WB/4c286829-8c0f-4020-b62c-d33ede2445cc.jpg", "https://d2ol7oe51mr4n9.cloudfront.net/user_3DyScwqW9PJnlbQPOYfInCDp9WB/904eee64-8bb8-4c4f-b55c-120e1ae1d24d.jpg"], placeholder: false }
@@ -4875,7 +4875,7 @@ function RootComponent() {
     /* @__PURE__ */ jsxRuntimeExports.jsx(MobileQuickBar, {})
   ] });
 }
-const $$splitComponentImporter$9 = () => import("./index-5r650Q7w.js");
+const $$splitComponentImporter$9 = () => import("./index-jH7IYTuA.js");
 const Route$b = createFileRoute()({
   head: () => ({
     links: [{
@@ -4886,7 +4886,7 @@ const Route$b = createFileRoute()({
   }),
   component: lazyRouteComponent($$splitComponentImporter$9, "component")
 });
-const $$splitComponentImporter$8 = () => import("./about-T6whwCEs.js");
+const $$splitComponentImporter$8 = () => import("./about-BW0xATro.js");
 const Route$a = createFileRoute()({
   head: () => ({
     meta: [{
@@ -4898,7 +4898,7 @@ const Route$a = createFileRoute()({
   }),
   component: lazyRouteComponent($$splitComponentImporter$8, "component")
 });
-const $$splitComponentImporter$7 = () => import("./client-area-DzxU-ICO.js");
+const $$splitComponentImporter$7 = () => import("./client-area-DoUURpYF.js");
 const Route$9 = createFileRoute()({
   head: () => ({
     meta: [{
@@ -4910,7 +4910,7 @@ const Route$9 = createFileRoute()({
   }),
   component: lazyRouteComponent($$splitComponentImporter$7, "component")
 });
-const $$splitComponentImporter$6 = () => import("./experiences-DtW360TS.js");
+const $$splitComponentImporter$6 = () => import("./experiences-7EDb6gDz.js");
 const Route$8 = createFileRoute()({
   head: () => ({
     meta: [{
@@ -4922,7 +4922,7 @@ const Route$8 = createFileRoute()({
   }),
   component: lazyRouteComponent($$splitComponentImporter$6, "component")
 });
-const $$splitComponentImporter$5 = () => import("./faq-0cg19Cr-.js");
+const $$splitComponentImporter$5 = () => import("./faq-DW8swpJd.js");
 const Route$7 = createFileRoute()({
   head: () => ({
     meta: [{
@@ -4934,7 +4934,7 @@ const Route$7 = createFileRoute()({
   }),
   component: lazyRouteComponent($$splitComponentImporter$5, "component")
 });
-const $$splitComponentImporter$4 = () => import("./inquire-DqbO42Wn.js");
+const $$splitComponentImporter$4 = () => import("./inquire-BMSTiySc.js");
 const Route$6 = createFileRoute()({
   validateSearch: (search) => ({
     type: typeof search.type === "string" ? search.type : void 0
@@ -4949,7 +4949,7 @@ const Route$6 = createFileRoute()({
   }),
   component: lazyRouteComponent($$splitComponentImporter$4, "component")
 });
-const $$splitComponentImporter$3 = () => import("./locations-BReX8E-G.js");
+const $$splitComponentImporter$3 = () => import("./locations-sMYmxN-A.js");
 const Route$5 = createFileRoute()({
   head: () => ({
     meta: [{
@@ -4982,7 +4982,7 @@ const Route$4 = createFileRoute()({
     }
   }
 });
-const $$splitComponentImporter$2 = () => import("./sessions-CIZDUnKR.js");
+const $$splitComponentImporter$2 = () => import("./sessions-BMkaKAyB.js");
 const Route$3 = createFileRoute()({
   head: () => ({
     meta: [{
@@ -5021,7 +5021,7 @@ const Route$2 = createFileRoute()({
     }
   }
 });
-const $$splitComponentImporter$1 = () => import("./index-CWTXgwWU.js");
+const $$splitComponentImporter$1 = () => import("./index-CvC5Ls2-.js");
 const Route$1 = createFileRoute()({
   head: () => ({
     meta: [{
@@ -5033,7 +5033,7 @@ const Route$1 = createFileRoute()({
   }),
   component: lazyRouteComponent($$splitComponentImporter$1, "component")
 });
-const $$splitComponentImporter = () => import("./_category-6P8Zu_44.js");
+const $$splitComponentImporter = () => import("./_category-D1ywIn9K.js");
 const Route2 = createFileRoute()({
   head: () => ({
     meta: [{

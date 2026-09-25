@@ -1,5 +1,5 @@
 import { T as jsxRuntimeExports } from "../server.js";
-import { b as PORTFOLIO_CATEGORIES, L as Link, c } from "./router-B53LTBcc.js";
+import { b as PORTFOLIO_CATEGORIES, L as Link, c } from "./router-CJF6RtBF.js";
 import "node:async_hooks";
 import "node:stream";
 import "node:stream/web";
@@ -10,16 +10,11 @@ import "stream";
 function PortfolioIndex() {
   const filled = PORTFOLIO_CATEGORIES.filter((c2) => c2.images.length > 0);
   const comingSoon = PORTFOLIO_CATEGORIES.filter((c2) => c2.images.length === 0);
-  const featured = filled[0];
   return /* @__PURE__ */ jsxRuntimeExports.jsxs(jsxRuntimeExports.Fragment, { children: [
     /* @__PURE__ */ jsxRuntimeExports.jsxs("section", { className: "is-dark relative overflow-hidden bg-emerald-deep", children: [
-      featured && /* @__PURE__ */ jsxRuntimeExports.jsx("img", { src: featured.images[0], alt: `${featured.label} - featured photograph`, className: "absolute inset-0 h-full w-full object-cover object-center opacity-60" }),
-      /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "absolute inset-0 bg-gradient-to-t from-emerald-deep via-emerald-deep/55 to-emerald-deep/25", "aria-hidden": "true" }),
-      /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "relative mx-auto max-w-7xl px-5 py-32 text-center sm:px-8 sm:py-40", children: [
-        /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-[0.7rem] font-semibold uppercase tracking-[0.3em] text-sage", children: "The Work" }),
-        /* @__PURE__ */ jsxRuntimeExports.jsx("h1", { className: "mt-5 text-5xl leading-tight text-ivory sm:text-6xl lg:text-7xl", children: "Portfolio" }),
-        /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "mx-auto mt-6 max-w-xl font-accent text-2xl italic text-ivory/85 sm:text-2xl", children: "Collections, one album at a time." })
-      ] })
+      /* @__PURE__ */ jsxRuntimeExports.jsx("img", { src: "https://d2ol7oe51mr4n9.cloudfront.net/user_3DyScwqW9PJnlbQPOYfInCDp9WB/bde8000a-89af-4541-b3ae-22c51d8419b3.jpg", alt: "A girl kneeling in the garden, kissing her dog at golden hour", className: "absolute inset-0 h-full w-full object-cover object-center" }),
+      /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "absolute inset-0 bg-gradient-to-t from-emerald-deep/85 via-emerald-deep/25 to-transparent", "aria-hidden": "true" }),
+      /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "relative mx-auto flex min-h-[62vh] max-w-7xl items-end px-5 pb-14 sm:px-8 sm:pb-20", children: /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-[0.7rem] font-semibold uppercase tracking-[0.3em] text-ivory/90", children: "Portfolio" }) })
     ] }),
     /* @__PURE__ */ jsxRuntimeExports.jsx("section", { className: "bg-ivory", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "mx-auto max-w-7xl px-5 py-20 sm:px-8 sm:py-28", children: [
       /* @__PURE__ */ jsxRuntimeExports.jsx("ul", { className: "grid gap-16 md:grid-cols-12 md:gap-x-12 lg:gap-x-16", children: filled.map((category, idx) => /* @__PURE__ */ jsxRuntimeExports.jsx("li", { className: idx % 2 === 0 ? "md:col-span-7" : "md:col-span-5 md:mt-28", children: /* @__PURE__ */ jsxRuntimeExports.jsxs(Link, { to: "/portfolio/$category", params: {

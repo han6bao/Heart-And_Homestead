@@ -21,32 +21,23 @@ export const Route = createFileRoute("/portfolio/")({
 function PortfolioIndex() {
   const filled = PORTFOLIO_CATEGORIES.filter((c) => c.images.length > 0);
   const comingSoon = PORTFOLIO_CATEGORIES.filter((c) => c.images.length === 0);
-  const featured = filled[0];
 
   return (
     <>
-      {/* Featured band */}
+      {/* Featured band: a single warm photograph welcomes the work */}
       <section className="is-dark relative overflow-hidden bg-emerald-deep">
-        {featured && (
-          <img
-            src={featured.images[0]}
-            alt={`${featured.label} - featured photograph`}
-            className="absolute inset-0 h-full w-full object-cover object-center opacity-60"
-          />
-        )}
+        <img
+          src="https://d2ol7oe51mr4n9.cloudfront.net/user_3DyScwqW9PJnlbQPOYfInCDp9WB/bde8000a-89af-4541-b3ae-22c51d8419b3.jpg"
+          alt="A girl kneeling in the garden, kissing her dog at golden hour"
+          className="absolute inset-0 h-full w-full object-cover object-center"
+        />
         <div
-          className="absolute inset-0 bg-gradient-to-t from-emerald-deep via-emerald-deep/55 to-emerald-deep/25"
+          className="absolute inset-0 bg-gradient-to-t from-emerald-deep/85 via-emerald-deep/25 to-transparent"
           aria-hidden="true"
         />
-        <div className="relative mx-auto max-w-7xl px-5 py-32 text-center sm:px-8 sm:py-40">
-          <p className="text-[0.7rem] font-semibold uppercase tracking-[0.3em] text-sage">
-            The Work
-          </p>
-          <h1 className="mt-5 text-5xl leading-tight text-ivory sm:text-6xl lg:text-7xl">
+        <div className="relative mx-auto flex min-h-[62vh] max-w-7xl items-end px-5 pb-14 sm:px-8 sm:pb-20">
+          <p className="text-[0.7rem] font-semibold uppercase tracking-[0.3em] text-ivory/90">
             Portfolio
-          </h1>
-          <p className="mx-auto mt-6 max-w-xl font-accent text-2xl italic text-ivory/85 sm:text-2xl">
-            Collections, one album at a time.
           </p>
         </div>
       </section>

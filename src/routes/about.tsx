@@ -2,6 +2,7 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { Flower } from "@phosphor-icons/react";
 import { BotanicalDivider } from "../components/site/BotanicalDivider";
 import { PhotoPlaceholder } from "../components/site/PhotoPlaceholder";
+import { StoryReveal } from "../components/site/StoryReveal";
 
 export const Route = createFileRoute("/about")({
   head: () => ({
@@ -76,6 +77,16 @@ function About() {
               </p>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* Emily's story, revealed a page at a time */}
+      <section className="bg-ivory">
+        <div className="mx-auto max-w-3xl px-5 pb-20 sm:px-8 sm:pb-24">
+          <StoryReveal />
+          <p className="mx-auto mt-10 max-w-2xl text-center font-accent text-xl italic leading-relaxed text-emerald-deep sm:text-2xl">
+            If any of this sounds like your family, I would love to hear your story.
+          </p>
         </div>
       </section>
 

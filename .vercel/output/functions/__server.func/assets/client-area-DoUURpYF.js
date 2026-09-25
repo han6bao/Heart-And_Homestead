@@ -1,5 +1,5 @@
 import { T as jsxRuntimeExports } from "../server.js";
-import { a as LINKS, L as Link, c } from "./router-B53LTBcc.js";
+import { a as LINKS, L as Link, c } from "./router-CJF6RtBF.js";
 import "node:async_hooks";
 import "node:stream";
 import "node:stream/web";

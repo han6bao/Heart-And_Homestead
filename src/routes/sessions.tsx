@@ -137,7 +137,15 @@ function Sessions() {
                     </div>
                   ) : (
                     <div className="mt-7">
-                      <PhotoPlaceholder label={session.name} className="aspect-[16/9]" />
+                      <PhotoPlaceholder
+                        label={session.name}
+                        note={
+                          session.id === "maternity"
+                            ? "Maternity + Newborn Photography — Coming Soon"
+                            : undefined
+                        }
+                        className="aspect-[16/9]"
+                      />
                     </div>
                   )}
                 </div>

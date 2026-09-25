@@ -1,5 +1,5 @@
 import { M as reactExports, T as jsxRuntimeExports } from "../server.js";
-import { p } from "./router-B53LTBcc.js";
+import { p } from "./router-CJF6RtBF.js";
 const e$1 = /* @__PURE__ */ new Map([
   [
     "bold",
@@ -37,11 +37,12 @@ e.displayName = "CameraIcon";
 const n = e;
 function PhotoPlaceholder({
   label,
-  className = ""
+  className = "",
+  note = "Photography coming soon"
 }) {
   return /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { role: "img", "aria-label": `${label} - photography coming soon`, className: `placeholder-tile ${className}`, children: [
     /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "inline-flex text-sage", children: /* @__PURE__ */ jsxRuntimeExports.jsx(n, { size: 30, weight: "thin", "aria-hidden": "true" }) }),
-    /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "ph-note", children: "Photography coming soon" })
+    /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "ph-note", children: note })
   ] });
 }
 export {
